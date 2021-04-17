@@ -1,0 +1,189 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}
+    {% if user.id is not None %}
+        {{ request.user.username }}
+    {% endif %}
+
+{% endblock title %}
+{% block description %}
+    {{setting.description}}
+{% endblock description %}">
+{% block keywords %}
+
+{% endblock keywords %}">
+{% block header %}
+    {% include 'header.html' %}
+{% endblock header %}
+{% block mainbody %}
+    <!-- Begin Li's Breadcrumb Area -->
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <ul>
+                    <li><a href="{% url 'fiddoctor' %}">Home</a></li>
+                    <li class="active">Doctor Registration</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                    {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
+                    {{ message }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+
+
+
+
+        <div class="row">
+            <div class="col-12 bg-light">
+                <div class="row pt-2 pb-5 px-5" id="divStep1Section">
+                    <div class="tab-content col-12 col-lg-8">
+
+
+
+
+
+
+
+                            <form method="POST" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                <div class="form-group" style="" >
+                                    <label > Doctor's name </label>
+                                    <input placeholder="Doctor Name" name="name">
+
+                                </div>
+                                <div class="row pt-2 pb-5 px-5" >
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="first_name">Speciality *</label>
+                                            <input placeholder="" type="text" value="{{ Speciality}}" name="d_s_title">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="last_name">Name of Speciality *</label>
+                                            <input placeholder="" type="text" value="" name="d_s_text">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="phone">Day *</label>
+                                            <input name="d1" type="text" value=""  class="form-control" placeholder="Enter Chamber Day" required="" autocomplete="off" style="padding-left: 90px;">
+                                            <div class="input-group" style="display: none">
+                                                <div class="iti iti--allow-dropdown iti--separate-dial-code"><div class="iti__flag-container"><div class="iti__selected-flag" role="combobox" aria-owns="country-listbox" tabindex="0" title="Bangladesh (বাংলাদেশ): +880"><div class="iti__flag iti__bd"></div><div class="iti__selected-dial-code">+880</div><div class="iti__arrow"></div></div><ul class="iti__country-list iti__hide" id="country-listbox" aria-expanded="false" role="listbox" aria-activedescendant="iti-item-bd"><li class="iti__country iti__preferred" tabindex="-1" id="iti-item-us" role="option" data-dial-code="1" data-country-code="us"><div class="iti__flag-box"><div class="iti__flag iti__us"></div></div></li></ul>
+                                                </div>
+
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="email">Morning Time *</label>
+                                            <input placeholder="Enter Morning Chamber Time" type="text" value="" name="m_t">
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="dob">Evening Time *</label>
+                                            <input placeholder="Enter Evening Chamber Time" type="text" value="" name="e_t">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label >Morning Location *</label>
+                                            <input placeholder="Enter Morning Chamber Location" type="text" value="" name="m_l">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label >Evening Location *</label>
+                                            <input placeholder="Enter Evening Chamber Location" type="text" value="" name="e_l">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3">
+                                        <div class="form-group">
+                                            <label >Image *</label>
+                                            <input type="file" name="image" placeholder="Doctor Image" class="form-control" required="">
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label>Day 2*</label>
+                                            <input name="d2" type="text" placeholder="Chamber Day 2" class="form-control" value="" required="">
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label>Day 3*</label>
+                                            <input name="d3" type="text" placeholder="Chamber Day 3" class="form-control" value="" required="">
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label>Day 4*</label>
+                                            <input name="d4" type="text" placeholder="Chamber Day 4" class="form-control" value="" required="">
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label>Day 5*</label>
+                                            <input name="d5" type="text" placeholder="Chamber Day 5" class="form-control" value="" required="">
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12 text-center py-5">
+                                        <button type="submit" class="btn btn-primary btn-lg" >Submit</button>
+                                    </div>
+                                </div>
+
+
+                            </form>
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+{% endblock mainbody %}
+{% block footer %}
+    {% include 'footer.html' %}
+{% endblock footer %}

@@ -1,0 +1,260 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block header %}
+    {% include 'index.html' %}
+    {% include 'header.html' %}
+{% endblock header %}
+ {% block body %}
+
+     <div class="page-home">
+        <div id="home">
+
+        </div>
+        <div id="float">
+            <div class="container">
+                <div class="row d-flex align-items-stretch">
+                    <a href="{% url 'doctor'%}" class="col-4 floatItem floatItem--doctor">
+                        <i class="floatItem__icon"></i>
+                        <p class="floatItem__tagline">Find a Doctor </p>
+                        <p class="floatItem__subTagline">Choose by name, specialty and more. </p>
+                    </a>
+                    <a href="{% url 'medihome' %}" class="col-4 floatItem floatItem--conditions">
+                        <i class="floatItem__icon"></i>
+                        <p class="floatItem__tagline">MediShop </p>
+                        <p class="floatItem__subTagline">Visit our Medical Shop </p>
+                    </a>
+                    <a href="{% url 'ambulanceHome' %}" class="col-4 floatItem floatItem--appointment">
+                        <i class="floatItem__icon"></i>
+                        <p class="floatItem__tagline">Book Ambulance</p>
+                        <p class="floatItem__subTagline">Schedule your visit online. </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+         <div id="centers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="headline">
+
+                            Our Specialty Centers
+
+
+
+                        </h2>
+                    </div>
+                </div>
+                <!--
+                  <div class="row">
+                     <div class="col-12 slick-initialized slick-slider slick-dotted" id="centersCarousel"><button type="button" class="slick-arrow-prev slick-arrow" style=""></button>
+
+                    <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 7982px; transform: translate3d(-3070px, 0px, 0px);"><div class="centerCard shadow slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 614px;">
+                    <div class="row">
+                <a href="/en/centers/heart-cardiology-center-treatment-surgery-bangkok-thailand" class="col-12 col-lg-6 centerCard__visual" style="background-image:url('/getattachment/90a6299f-6a49-4198-b2b6-d9e4a043b6f7/image.jpg')" tabindex="-1"></a>
+                <div class="col-12 col-lg-6 centerCard__text">
+                  <h3 class="centerCard__text__title">Heart (Cardiology) Center </h3>
+                  <p class="centerCard__text__desc block-ellipsis">Advanced diagnostics, interventional cardiology, arrhythmia treatment, cardiothoracic surgery and cardiac intensive care by internationally trained physicians.</p>
+                  <a href="/en/centers/heart-cardiology-center-treatment-surgery-bangkok-thailand" class="centerCard__text__link" tabindex="-1">Learn more</a>
+                </div>
+              </div>
+                    </div><div class="centerCard shadow slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide20" aria-describedby="slick-slide-control20" style="width: 614px;">
+              <div class="row">
+                <a href="/en/centers/horizon-cancer-treatment-center-bangkok-thailand" class="col-12 col-lg-6 centerCard__visual" style="background-image:url('/getattachment/07d67a62-6680-4066-b42f-fd0d8c5e5d6d/image.jpg')" tabindex="-1"></a>
+                <div class="col-12 col-lg-6 centerCard__text">
+                  <h3 class="centerCard__text__title">Horizon Regional Cancer Center</h3>
+                  <p class="centerCard__text__desc block-ellipsis">Cancer center Provides comprehensive cancer care and treatment by a multidisciplinary team of cancer specialists, including prevention, diagnosis, treatment.</p>
+                  <a href="/en/centers/horizon-cancer-treatment-center-bangkok-thailand" class="centerCard__text__link" tabindex="-1">Learn more</a>
+                </div>
+              </div>
+            </div><div class="centerCard shadow slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide21" aria-describedby="slick-slide-control21" style="width: 614px;">
+                   <div class="row">
+                <a href="/en/centers/health-check-up-center-bangkok-thailand-jci-best" class="col-12 col-lg-6 centerCard__visual" style="background-image:url('/getattachment/27abe35b-1bc4-4b2d-afd5-2370386eb040/image.jpg')" tabindex="-1"></a>
+                <div class="col-12 col-lg-6 centerCard__text">
+                  <h3 class="centerCard__text__title">Health Screening Center (Checkup)</h3>
+                  <p class="centerCard__text__desc block-ellipsis">Bumrungrad International's Health Checkup &amp; Screening Center in Bangkok, Thailand is one of the largest physical check-up centers in the region</p>
+                  <a href="/en/centers/health-check-up-center-bangkok-thailand-jci-best" class="centerCard__text__link" tabindex="-1">Learn more</a>
+                </div>
+              </div>
+                   </div><div class="centerCard shadow slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide22" aria-describedby="slick-slide-control22" style="width: 614px;">
+              <div class="row">
+                <a href="/en/centers/women-center-health-obgyn-bangkok-thailand" class="col-12 col-lg-6 centerCard__visual" style="background-image:url('/getattachment/f94c9ef3-fe84-4680-ad15-1c20dd40470f/image.jpg')" tabindex="-1"></a>
+                <div class="col-12 col-lg-6 centerCard__text">
+                  <h3 class="centerCard__text__title">Women's Center</h3>
+                  <p class="centerCard__text__desc block-ellipsis">Over 60 Ob/Gyn’s, including experts in fetal assessment, pre-natal genetics, high-risk pregnancy, menopause, gynecological and breast cancer. Fertility Clinic.</p>
+                  <a href="/en/centers/women-center-health-obgyn-bangkok-thailand" class="centerCard__text__link" tabindex="-1">Learn more</a>
+                </div>
+              </div>
+                </div><div class="centerCard shadow slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide23" aria-describedby="slick-slide-control23" style="width: 614px;">
+                   <div class="row">
+                <a href="/en/centers/pulmonary-lung-center-bangkok-thailand" class="col-12 col-lg-6 centerCard__visual" style="background-image:url('/getattachment/bd77aaf7-375e-485a-a198-d6f26c172c60/image.jpg')" tabindex="-1"></a>
+                <div class="col-12 col-lg-6 centerCard__text">
+                  <h3 class="centerCard__text__title">Pulmonary (Lung) Center</h3>
+                  <p class="centerCard__text__desc block-ellipsis">Pulmonary (Lung) Center at Bumrungrad Bangkok is very experienced in the examination, diagnosis, and treatment of all pulmonary and respiratory system diseases.</p>
+                  <a href="/en/centers/pulmonary-lung-center-bangkok-thailand" class="centerCard__text__link" tabindex="-1">Learn more</a>
+                </div>
+              </div>
+                   </div><div class="centerCard shadow slick-slide slick-current slick-active" data-slick-index="4" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide24" aria-describedby="slick-slide-control24" style="width: 614px;">
+                   <div class="row">
+                <a href="/en/centers/spine-institute-surgery-bangkok-thailand-best-jci" class="col-12 col-lg-6 centerCard__visual" style="background-image:url('/getattachment/2b701c2d-2a88-4071-8928-e8a539dd5e3c/image.jpg')" tabindex="0"></a>
+                <div class="col-12 col-lg-6 centerCard__text">
+                  <h3 class="centerCard__text__title">Spine Institute</h3>
+                  <p class="centerCard__text__desc block-ellipsis">One of Asia’s top spine centers. Internationally-trained team offers pain, imaging, therapy experts, plus surgeons experienced in latest endoscopic techniques.</p>
+                  <a href="/en/centers/spine-institute-surgery-bangkok-thailand-best-jci" class="centerCard__text__link" tabindex="0">Learn more</a>
+                </div>
+              </div>
+                   </div><div class="centerCard shadow slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide25" aria-describedby="slick-slide-control25" style="width: 614px;">
+              <div class="row">
+                <a href="/en/centers/heart-cardiology-center-treatment-surgery-bangkok-thailand" class="col-12 col-lg-6 centerCard__visual" style="background-image:url('/getattachment/90a6299f-6a49-4198-b2b6-d9e4a043b6f7/image.jpg')" tabindex="-1"></a>
+                <div class="col-12 col-lg-6 centerCard__text">
+                  <h3 class="centerCard__text__title">Heart (Cardiology) Center </h3>
+                  <p class="centerCard__text__desc block-ellipsis">Advanced diagnostics, interventional cardiology, arrhythmia treatment, cardiothoracic surgery and cardiac intensive care by internationally trained physicians.</p>
+                  <a href="/en/centers/heart-cardiology-center-treatment-surgery-bangkok-thailand" class="centerCard__text__link" tabindex="-1">Learn more</a>
+                </div>
+              </div>
+            </div><div class="centerCard shadow slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" tabindex="-1" style="width: 614px;">
+                  <div class="row">
+                <a href="/en/centers/horizon-cancer-treatment-center-bangkok-thailand" class="col-12 col-lg-6 centerCard__visual" style="background-image:url('/getattachment/07d67a62-6680-4066-b42f-fd0d8c5e5d6d/image.jpg')" tabindex="-1"></a>
+                <div class="col-12 col-lg-6 centerCard__text">
+                  <h3 class="centerCard__text__title">Horizon Regional Cancer Center</h3>
+                  <p class="centerCard__text__desc block-ellipsis">Cancer center Provides comprehensive cancer care and treatment by a multidisciplinary team of cancer specialists, including prevention, diagnosis, treatment.</p>
+                  <a href="/en/centers/horizon-cancer-treatment-center-bangkok-thailand" class="centerCard__text__link" tabindex="-1">Learn more</a>
+                </div>
+              </div>
+                  </div><div class="centerCard shadow slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" tabindex="-1" style="width: 614px;">
+              <div class="row">
+                <a href="/en/centers/health-check-up-center-bangkok-thailand-jci-best" class="col-12 col-lg-6 centerCard__visual" style="background-image:url('/getattachment/27abe35b-1bc4-4b2d-afd5-2370386eb040/image.jpg')" tabindex="-1"></a>
+                <div class="col-12 col-lg-6 centerCard__text">
+                  <h3 class="centerCard__text__title">Health Screening Center (Checkup)</h3>
+                  <p class="centerCard__text__desc block-ellipsis">Bumrungrad International's Health Checkup &amp; Screening Center in Bangkok, Thailand is one of the largest physical check-up centers in the region</p>
+                  <a href="/en/centers/health-check-up-center-bangkok-thailand-jci-best" class="centerCard__text__link" tabindex="-1">Learn more</a>
+                </div>
+              </div>
+            </div><div class="centerCard shadow slick-slide slick-cloned" data-slick-index="8" aria-hidden="true" tabindex="-1" style="width: 614px;">
+                 <div class="row">
+                <a href="/en/centers/women-center-health-obgyn-bangkok-thailand" class="col-12 col-lg-6 centerCard__visual" style="background-image:url('/getattachment/f94c9ef3-fe84-4680-ad15-1c20dd40470f/image.jpg')" tabindex="-1"></a>
+                <div class="col-12 col-lg-6 centerCard__text">
+                  <h3 class="centerCard__text__title">Women's Center</h3>
+                  <p class="centerCard__text__desc block-ellipsis">Over 60 Ob/Gyn’s, including experts in fetal assessment, pre-natal genetics, high-risk pregnancy, menopause, gynecological and breast cancer. Fertility Clinic.</p>
+                  <a href="/en/centers/women-center-health-obgyn-bangkok-thailand" class="centerCard__text__link" tabindex="-1">Learn more</a>
+                </div>
+              </div>
+                 </div><div class="centerCard shadow slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" tabindex="-1" style="width: 614px;">
+              <div class="row">
+                <a href="/en/centers/pulmonary-lung-center-bangkok-thailand" class="col-12 col-lg-6 centerCard__visual" style="background-image:url('/getattachment/bd77aaf7-375e-485a-a198-d6f26c172c60/image.jpg')" tabindex="-1"></a>
+                <div class="col-12 col-lg-6 centerCard__text">
+                  <h3 class="centerCard__text__title">Pulmonary (Lung) Center</h3>
+                  <p class="centerCard__text__desc block-ellipsis">Pulmonary (Lung) Center at Bumrungrad Bangkok is very experienced in the examination, diagnosis, and treatment of all pulmonary and respiratory system diseases.</p>
+                  <a href="/en/centers/pulmonary-lung-center-bangkok-thailand" class="centerCard__text__link" tabindex="-1">Learn more</a>
+                </div>
+              </div>
+            </div><div class="centerCard shadow slick-slide slick-cloned" data-slick-index="10" aria-hidden="true" tabindex="-1" style="width: 614px;">
+                <div class="row">
+                <a href="/en/centers/spine-institute-surgery-bangkok-thailand-best-jci" class="col-12 col-lg-6 centerCard__visual" style="background-image:url('/getattachment/2b701c2d-2a88-4071-8928-e8a539dd5e3c/image.jpg')" tabindex="-1"></a>
+                <div class="col-12 col-lg-6 centerCard__text">
+                  <h3 class="centerCard__text__title">Spine Institute</h3>
+                  <p class="centerCard__text__desc block-ellipsis">One of Asia’s top spine centers. Internationally-trained team offers pain, imaging, therapy experts, plus surgeons experienced in latest endoscopic techniques.</p>
+                  <a href="/en/centers/spine-institute-surgery-bangkok-thailand-best-jci" class="centerCard__text__link" tabindex="-1">Learn more</a>
+                </div>
+              </div>
+                </div><div class="centerCard shadow slick-slide slick-cloned" data-slick-index="11" aria-hidden="true" tabindex="-1" style="width: 614px;">
+              <div class="row">
+                <a href="/en/centers/heart-cardiology-center-treatment-surgery-bangkok-thailand" class="col-12 col-lg-6 centerCard__visual" style="background-image:url('/getattachment/90a6299f-6a49-4198-b2b6-d9e4a043b6f7/image.jpg')" tabindex="-1"></a>
+                <div class="col-12 col-lg-6 centerCard__text">
+                  <h3 class="centerCard__text__title">Heart (Cardiology) Center </h3>
+                  <p class="centerCard__text__desc block-ellipsis">Advanced diagnostics, interventional cardiology, arrhythmia treatment, cardiothoracic surgery and cardiac intensive care by internationally trained physicians.</p>
+                  <a href="/en/centers/heart-cardiology-center-treatment-surgery-bangkok-thailand" class="centerCard__text__link" tabindex="-1">Learn more</a>
+                </div>
+              </div>
+            </div></div></div>
+
+                     <button type="button" class="slick-arrow-next slick-arrow" style=""></button><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control20" aria-controls="slick-slide20" aria-label="1 of 6" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control21" aria-controls="slick-slide21" aria-label="2 of 6" tabindex="-1">2</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control22" aria-controls="slick-slide22" aria-label="3 of 6" tabindex="-1">3</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control23" aria-controls="slick-slide23" aria-label="4 of 6" tabindex="-1">4</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control24" aria-controls="slick-slide24" aria-label="5 of 6" tabindex="0" aria-selected="true">5</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control25" aria-controls="slick-slide25" aria-label="6 of 6" tabindex="-1">6</button></li></ul></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <a id="p_lt_zoneContent_masterPlaceholder_p_lt_zoneCenterButton_SeeAllCenter_btnElem_hyperLink" class="btn btn-primary" href="/en/clinics-and-centers"><span id="p_lt_zoneContent_masterPlaceholder_p_lt_zoneCenterButton_SeeAllCenter_btnElem_lblText">SEE ALL CENTERS</span></a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            --->
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="active"></li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="active"></li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="active"></li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" class="active"></li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" class="active"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{%static 'img/homeimg/image.jpg'%}" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'img/homeimg/image1.jpg'%}" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'img/homeimg/image2.jpg'%}" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'img/homeimg/image3.jpg'%}" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Fourth slide label</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'img/homeimg/image4.jpg'%}" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Fifth slide label</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'img/homeimg/image5.jpg'%}" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Six slide label</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+
+{% endblock body %}
+
+{% block footer %}
+    {% include 'index.html' %}
+    {% include 'footer.html' %}
+{% endblock footer %}

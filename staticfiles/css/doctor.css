@@ -1,0 +1,28 @@
+.accordian--item--header--active:after{
+    content: '-';
+    color: #0bb288;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 0.9rem;
+}
+.doctor_active{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.doctor_inactive{
+    display: none;
+}
+section{
+    display: flex !important;
+    flex-wrap: wrap;
+}
+.doctor__action__btn--call {
+    background-image: url('/static/img/call-rounded-gray.png');
+}
+.doctor__action__btn--inquiry {
+    background-image: url('/static/img/inquiry-rounded-gray.png');
+}
+.doctor__action__btn--appointment {
+    background-image: url('/static/img/appointment-rounded-gray.png');
+}

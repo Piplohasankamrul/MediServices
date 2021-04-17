@@ -1,0 +1,213 @@
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+.doctor_active{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+@media (min-width: 992px){
+.container {
+    max-width: 960px;
+}}
+.container {
+    max-width: 960px;
+}
+.bg-gray {
+    height: 100%;
+}
+.bg-gray {
+    background-color: #8a8c8c;
+    color: #fff;
+}
+@media (min-width: 992px)
+.pl-lg-5, .px-lg-5 {
+    padding-left: 3rem!important;
+}
+.pl-lg-5, .px-lg-5 {
+    padding-left: 3rem!important;
+}
+@media (min-width: 992px)
+.pr-lg-5, .px-lg-5 {
+    padding-right: 3rem!important;
+}
+.pr-lg-5, .px-lg-5 {
+    padding-right: 3rem!important;
+}
+.pb-5, .py-5 {
+    padding-bottom: 3rem!important;
+}
+.pt-5, .py-5 {
+    padding-top: 3rem!important;
+}
+.mb-5, .my-5 {
+    margin-bottom: 3rem!important;
+}
+.mt-5, .my-5 {
+    margin-top: 3rem!important;
+}
+.text-light {
+    color: #f8f9fa!important;
+}
+form label {
+    /* color: #0bb288; */
+}
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+.mb-0, .my-0 {
+    margin-bottom: 0!important;
+}
+select#p_lt_zoneContent_masterPlaceholder_p_lt_zoneContentCenter_BIHFindADoctor2019_ddlSpecialty {
+    height: 3.5em;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    /* height: calc(1.4em + .75rem + 2px); */
+    padding: .375rem .75rem;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    /* -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out; */
+    /* transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out; */
+    /* transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; */
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}
+button, select {
+    text-transform: none;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+     font-size: 100%; 
+     line-height: 1.15; 
+    margin: 0;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.input-group-append {
+    width: 17%;
+}
+
+.input-group-append {
+    margin-left: -1px;
+}
+.input-group-prepend, .input-group-append {
+    /* display: -webkit-box; */
+    display: -ms-flexbox;
+    display: flex;
+}
+button#p_lt_zoneContent_masterPlaceholder_p_lt_zoneContentCenter_BIHFindADoctor2019_aSearch_txtSpecialty {
+    display: none;
+}
+button:not(:disabled), [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled) {
+    cursor: pointer;
+}
+.btn-search {
+    /*background: #4b4f54 url(search-white.png) center center no-repeat;*/
+    background-size: auto 40%;
+    border-color: #4b4f54;
+    border-radius: .25rem;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    width: 80px;
+    height: calc(1.75em + 2rem + 2px);
+}
+@media (min-width: 992px)
+.col-lg {
+    /*-ms-flex-preferred-size: 0;*/
+    flex-basis: 0;
+    /* -webkit-box-flex: 1; 
+    -ms-flex-positive: 1;*/
+    /* flex-grow: 1; */
+    max-width: 100%;
+}
+.col-lg {
+    /*-ms-flex-preferred-size: 0;*/
+    flex-basis: 0;
+    /* -webkit-box-flex: 1; 
+    -ms-flex-positive: 1;*/
+    /* flex-grow: 1; */
+    max-width: 100%;
+}
+.flex-grow-1, .page-package-center .additional__text__dropdown .dropdown-menu .dropdown-item__text, .page-package-detail .additional__text__dropdown .dropdown-menu .dropdown-item__text {
+    -webkit-box-flex: 1!important;
+   /* -ms-flex-positive: 1!important;*/
+    flex-grow: 1!important;
+}
+.form-control:disabled, .form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+.easy-autocomplete {
+    width: 100% !important;
+    float: left;
+}
+.easy-autocomplete {
+    position: relative;
+}
+.easy-autocomplete input {
+    border-color: #ccc;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+    color: #555;
+    float: none;
+    padding: 6px 12px;
+}
+input#p_lt_zoneContent_masterPlaceholder_p_lt_zoneContentCenter_BIHFindADoctor2019_txtDoctor {
+    height: 3em;
+}
+.easy-autocomplete-container {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.easy-autocomplete-container ul {
+    background: none repeat scroll 0 0 #fff;
+    border-top: 1px dotted #ccc;
+    display: none;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    position: relative;
+    top: -1px;
+}
+ol, ul, dl {
+    /* margin-top: 0; */
+    margin-bottom: 1rem;
+}
+.label-findADoctor {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+button #p_lt_zoneContent_masterPlaceholder_p_lt_zoneContentCenter_BIHFindADoctor2019_aSearch_txtSpecialty {
+    display: none;
+}
+button #p_lt_zoneContent_masterPlaceholder_p_lt_zoneContentCenter_BIHFindADoctor2019_aSearch_txtSubSpecialty {
+    display: none;
+}
+button #p_lt_zoneContent_masterPlaceholder_p_lt_zoneContentCenter_BIHFindADoctor2019_aSearch_txtDoctor {
+    display: none;
+}

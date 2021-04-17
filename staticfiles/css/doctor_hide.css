@@ -1,0 +1,8 @@
+.doctor_inactive{
+    display: none;
+}
+.doctor_active{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+}

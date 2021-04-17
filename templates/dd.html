@@ -1,0 +1,174 @@
+{% for doctor in doctors %}
+    <!--------------1st---------------------->
+    <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+        <div class="doctor">
+            <img src="{{doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+            <p class="doctor__name">{{doctor.name}} </p>
+            <p class="doctor__specialties__title">{{doctor.d_s_title}}</p>
+            <p class="doctor__specialies__text">{{doctor.d_s_text}}<br></p>
+            <a href="{% url 'doctor_profile' id=doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+            <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                <div id="accordian-213074" class="accordian--item--content collapse ">
+                    <div class="doctor__specialty__item">
+                        <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                            <thead>
+                            <tr>
+                                <th width="15%">Day</th>
+                                <th width="30%">Time</th>
+                                <th width="55%">Location</th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <td>{{doctor.d1}}<span class="value-day">1</span></td>
+                                <td>{{doctor.m_t}} || {{doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                <td>{{doctor.m_l}} || {{ doctor.e_l }}</td>
+                            </tr>
+                            <tr>
+                                <td>{{doctor.d2}}<span class="value-day">2</span></td>
+                                <td>{{doctor.m_t}} || {{doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                <td>{{doctor.m_l}} || {{ doctor.e_l }}</td>
+                            </tr>
+                            <tr>
+                                <td>{{doctor.d3}}<span class="value-day">3</span></td>
+                                <td>{{doctor.m_t}} || {{doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                <td>{{doctor.m_l}} || {{ doctor.e_l }}</td>
+                            </tr>
+                            <tr>
+                                <td>{{doctor.d4}}<span class="value-day">4</span></td>
+                                <td>{{doctor.m_t}} || {{doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                <td>{{doctor.m_l}} || {{ doctor.e_l }}</td>
+                            </tr>
+                            <tr>
+                                <td>{{doctor.d5}}<span class="value-day">5</span></td>
+                                <td>{{doctor.m_t}} || {{doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                <td>{{doctor.m_l}} || {{ doctor.e_l }}</td>
+                            </tr>
+                            <tr>
+                                <td>{{doctor.d6}}<span class="value-day">6</span></td>
+                                <td>{{doctor.m_t}} || {{doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                <td>{{doctor.m_l}} || {{ doctor.e_l }}</td>
+                            </tr>
+                            <tr>
+                                <td>{{doctor.d7}}<span class="value-day">7</span></td>
+                                <td>{{doctor.m_t}} || {{doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                <td>{{doctor.m_l}} || {{ doctor.e_l }}</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="doctor__action">
+                <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                <a href="{% url 'Appointment_Book' id=doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
+
+
+<li class="add-cart active"><a href="{% url 'add_to_shop_cart' id=product.id %}">Add to cart</a></li>
+
+<form action="{% url 'comment_Add' id=single_product.id %}" method="POST"></form>
+
+<!----------------------- Main Doctor's Part------------------------------------------------------------->
+<div class="row">
+    <div class="col-sm-12 content">
+
+        <div class="row" id="renderDoctor">
+
+            <section>
+                <div class="all" style="display: none;">
+                    <div class="doctor_active">
+                        {% for doctor in doctors %}
+                            <!--------------1st---------------------->
+                            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                                <div class="doctor">
+                                    <img src="{{doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                                    <p class="doctor__name">{{doctor.name}} </p>
+                                    <p class="doctor__specialties__title">{{doctor.d_s_title}}</p>
+                                    <p class="doctor__specialies__text">{{doctor.d_s_text}}<br></p>
+                                    <a href="{% url 'doctor_profile' id=doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                                            <div class="doctor__specialty__item">
+                                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                                    <thead>
+                                                    <tr>
+                                                        <th width="15%">Day</th>
+                                                        <th width="30%">Time</th>
+                                                        <th width="55%">Location</th>
+                                                    </tr>
+                                                    </thead>
+
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>{{doctor.d1}}<span class="value-day">1</span></td>
+                                                        <td>{{doctor.m_t}} || {{doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                                        <td>{{doctor.m_l}} || {{ doctor.e_l }}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{{doctor.d2}}<span class="value-day">2</span></td>
+                                                        <td>{{doctor.m_t}} || {{doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                                        <td>{{doctor.m_l}} || {{ doctor.e_l }}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{{doctor.d3}}<span class="value-day">3</span></td>
+                                                        <td>{{doctor.m_t}} || {{doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                                        <td>{{doctor.m_l}} || {{ doctor.e_l }}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{{doctor.d4}}<span class="value-day">4</span></td>
+                                                        <td>{{doctor.m_t}} || {{doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                                        <td>{{doctor.m_l}} || {{ doctor.e_l }}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>{{doctor.d5}}<span class="value-day">5</span></td>
+                                                        <td>{{doctor.m_t}} || {{doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                                        <td>{{doctor.m_l}} || {{ doctor.e_l }}</td>
+                                                    </tr>
+
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="doctor__action">
+                                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                                        <a href="{% url 'Appointment_Book' id=doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        {% endfor %}
+
+
+                    </div></div>
+            </section>
+            <section>
+                <div class="doctor_active">
+
+                    {% include 'symptom_doctor.html' %}
+                </div>
+            </section>
+
+
+
+
+
+
+        </div>
+
+    </div>
+</div>

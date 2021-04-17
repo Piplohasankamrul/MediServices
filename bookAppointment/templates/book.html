@@ -1,0 +1,96 @@
+{% load static %}
+{% load crispy_forms_tags %}
+    <!-- Begin Li's Breadcrumb Area -->
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <ul>
+                    <li><a href="{% url 'fiddoctor' %}">Home</a></li>
+                    <li class="active">Checkout</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Li's Breadcrumb Area End Here -->
+
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <form method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="checkbox-form">
+
+                            <div class="row">
+                                <div class="form-group" style="" >
+                                    <label >Search the doctor's name or surname</label>
+                                    <select name="doctor_name"  class="form-control" required aria-invalid="false">
+                                        <option value="{{doctor_profiles.name}}">{{doctor_profiles.name}}</option>
+                                        {% for doctor_name in doctors %}
+                                            <option value="{{doctor_name.id}}">{{doctor_name.name}}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="checkout-form-list">
+                                        <label>First Name <span class="required">*</span></label>
+                                        <input placeholder="" type="text" value="{{ user.first_name}}" name="first_name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkout-form-list">
+                                        <label>Last Name <span class="required">*</span></label>
+                                        <input placeholder="" type="text" value="{{ user.last_name }}" name="last_name">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="checkout-form-list">
+                                        <label>Address <span class="required">*</span></label>
+                                        <input placeholder="Street address" type="text" value="{{ profile.address }}" name="address">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="checkout-form-list">
+                                        <label>Town / City <span class="required">*</span></label>
+                                        <input type="text" value="{{ profile.city }}" name="city">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="country-select clearfix">
+                                        <label>Country <span class="required">*</span></label>
+                                        <select class="nice-select wide" value="{{ profile.country }}" name="country">
+                                            <option data-display="Bangladesh">Bangladesh</option>
+                                            <option value="uk">London</option>
+                                            <option value="rou">Romania</option>
+                                            <option value="fr">French</option>
+                                            <option value="de">Germany</option>
+                                            <option value="aus">Australia</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="checkout-form-list">
+                                        <label>Email Address <span class="required">*</span></label>
+                                        <input placeholder="" type="email" value="{{ user.email}}" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="checkout-form-list">
+                                        <label>Phone  <span class="required">*</span></label>
+                                        <input type="text" value="{{ profile.phone }}" name="phone">
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="order-button-payment">
+                                <input value="submit" type="submit" class="btn btn-primary btn-lg">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>

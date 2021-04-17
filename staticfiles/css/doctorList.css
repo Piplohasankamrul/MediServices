@@ -1,0 +1,270 @@
+.mt-4, .my-4, .page-appointment-review .infoWrapper .info {
+    margin-top: 1.5rem!important;
+}
+.text-green {
+    color: #0bb288;
+}
+.doctor_active{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.text-center {
+    text-align: center!important;
+}
+@media (min-width: 992px){
+h3, .h3 {
+    font-size: 1.72266rem;
+}}
+h3, .h3 {
+    font-size: 1.72266rem;
+}
+.btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
+    clear: both;
+}
+.btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before {
+    display: table;
+    content: " ";
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .page-center-individual .centerTab__header__link, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.row {
+    /* display: -webkit-box; */
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+@media (min-width: 576px){
+.col-sm-12 {
+    -webkit-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+}}
+@media (min-width: 992px){
+.col-lg-4 {
+    -webkit-box-flex: 0;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}}
+
+.doctor {
+    margin-top: 1rem;
+}
+.doctor {
+    background: #fff;
+    /* margin-top: 2rem; */
+    padding: 2rem 15px;
+}
+.shadow, .contentCard, .doctor, #mainNav .navbar .dropdown-language-menu, #searchbar, .page-package .packageCard, .page-package-center .package, .page-package-detail .package {
+    /* -webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.doctor__image {
+    display: block;
+    margin: 0 auto;
+    /* width: 50%; */
+}
+.rounded-circle, .doctor__image, .page-appointment-review .infoWrapper .info__image {
+    border-radius: 50%!important;
+}
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    /* height: auto; */
+}
+img {
+    border-style: none;
+}
+p.doctor__name {
+    height: 60px;
+}
+.doctor__name {
+    border-bottom: 1px solid #d1d3d3;
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.doctor__specialties__title {
+    color: #0bb288;
+    margin-bottom: 0;
+    text-align: center;
+}
+p {
+     margin: 0; 
+     padding: 0;
+     color: rgb(226 225 222);
+}
+p.doctor__specialies__text {
+    height: 63px;
+    overflow: hidden;
+}
+.doctor__btnProfile {
+    background: #0bb288;
+    color: #fff;
+    display: block;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+}
+.accordian--item--header {
+    background: #646569;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    display: block;
+    padding: .75rem 1rem;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none!important;
+}
+.accordian--item--header:after {
+    background: #fff;
+    border-radius: .6rem;
+    content: '+';
+    color: #646569;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    position: absolute;
+    right: 15px;
+    text-align: center;
+    width: 1.2rem;
+}
+.collapse:not(.show) {
+    display: none;
+}
+.accordian--item--content {
+    padding: 0;
+}
+.accordian--item--content {
+    background: #fff;
+    /* padding: 1.5rem 1rem; */
+}
+.page-doctor-profile .doctor__specialty__item {
+    padding: 0;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.page-doctor-profile .doctor__specialty__item table thead {
+    background: #0bb288;
+}
+*, *:before, *:after {
+    /* -webkit-box-sizing: inherit; */
+    box-sizing: inherit;
+}
+.page-doctor-profile .doctor__specialty__item table thead th {
+    padding: 10px 20px;
+}
+.page-doctor-profile .doctor__specialty__item table thead th {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    /* padding: 1rem 2rem; */
+}
+.page-doctor-profile .doctor__specialty__item table tbody {
+    text-align: center;
+}
+.page-doctor-profile .doctor__specialty__item table tbody tr:not(:last-child) {
+    border-bottom: 1px solid #d1d3d3;
+}
+.page-doctor-profile .doctor__specialty__item table tbody tr td:first-child {
+    text-transform: uppercase;
+}
+.page-doctor-profile .doctor__specialty__item table tbody tr td {
+    padding: 1rem 0;
+}
+table.doctor-time tbody tr td {
+    font-size: .85rem;
+}
+span.value-day {
+    display: none;
+}
+span.value-time-start {
+    display: none;
+}
+span.value-time-end {
+    display: none;
+}
+table.doctor-time tbody tr {
+    border-bottom: 1px solid #d1d3d3;
+}
+.justify-content-around, .doctor__action {
+    justify-content: space-around!important;
+}
+.d-flex, .doctor__action, .newsletter .footer__contact__item__text, .map .footer__contact__item__text, .page-banner, .page-about .milestone__item, .page-center-individual .centerTab__header, .page-home #articles .articleFeatured, .page-package-center .package__text__price, .page-package-detail .package__text__price, .page-package-center .additional__text__dropdown .dropdown-menu .dropdown-item__text, .page-package-detail .additional__text__dropdown .dropdown-menu .dropdown-item__text, .page-package-detail .packageListing__cost, .page-appointment-review .infoWrapper .info, .tab--item {
+    /* display: -webkit-box!important; 
+    display: -ms-flexbox!important;*/
+    display: flex!important;
+}
+
+
+.doctor__action__btn {
+    background: center top 15% no-repeat;
+    /* background-size: 50% auto; */
+    /* font-size: .65rem; */
+    padding-top: 25%;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    width: 30%;
+}
+a {
+    color: #0bb288;
+    /* text-decoration: none; */
+    /* background-color: transparent; 
+    -webkit-text-decoration-skip: objects;*/
+}
+a:hover{
+    color: #6c757d;
+    cursor: pointer;
+}
+.accordian--item a:hover{
+    color: #d1d3d3;
+    cursor: pointer;
+}
+.doctor__action__btn--call {
+    background-image: url('/static/img/call-rounded-gray.png');
+}
+.doctor__action__btn+.doctor__action__btn {
+    border-left: 1px solid #d1d3d3;
+}
+.doctor__action__btn--inquiry {
+    background-image: url('/static/img/inquiry-rounded-gray.png');
+}
+.doctor__action__btn {
+    background-size: 40% auto;
+    font-size: 0.8rem;
+}
+.doctor__action__btn--appointment {
+    background-image: url('/static/img/appointment-rounded-gray.png');
+}
+.col-lg-4 {
+    -webkit-box-flex: 0;
+    flex: 0 0 30.33333%;
+    max-width: 30.33333%;
+}
+.accordian--item--header--active:after{
+    content: '-';
+    color: #0bb288;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 0.9rem;
+}
+section{
+    display: flex !important;
+    flex-wrap: wrap;
+}

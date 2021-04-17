@@ -1,0 +1,64 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}
+    {% if user.id is not None %}
+        {{ request.user.username }}
+    {% endif %}
+
+{% endblock title %}
+{% block description %}
+    {{setting.description}}
+{% endblock description %}">
+{% block keywords %}
+
+{% endblock keywords %}">
+{% block header %}
+    {% include 'header.html' %}
+{% endblock header %}
+{% block mainbody %}
+    <!-- Begin Li's Breadcrumb Area -->
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <ul>
+                    <li><a href="{% url 'fiddoctor' %}">Home</a></li>
+                    <li class="active">Appointment Booking Completed </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Li's Breadcrumb Area End Here -->
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="order-summary clearfix">
+                        <div class="section-title">
+                            <h3 class="title">Booking Completed</h3>
+                        </div>
+
+                        <h2>Dear {{ user.first_name }} {{  user.last_name }}</h2>
+                        <h3>Your Booking  has been completed</h3>
+
+                        <h3>Thank You</h3>
+                        <hr>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+{% endblock mainbody %}
+{% block footer %}
+    {% include 'footer.html' %}
+{% endblock footer %}

@@ -1,0 +1,210 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+.breadcrumbs {
+    padding: 1.25rem 0;
+}
+.breadcrumbs__link {
+    color: rgb(167, 160, 148);
+    text-decoration-color: initial !important;
+}
+.breadcrumbs__link {
+    /* color: #646569; */
+    text-decoration: none!important;
+}
+.breadcrumbs__link:last-child {
+    color: rgb(82, 244, 204);
+}
+ .breadcrumbs__link + .breadcrumbs__link {
+     background-image: url('/static/img/homeimg/caret-right-primary.png');
+     background-color: initial;
+ }
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.breadcrumbs__link+.breadcrumbs__link {
+    background: url('/static/img/homeimg/caret-right-primary.png') no-repeat left .5rem center;
+    background-size: auto 1rem;
+    padding-left: 2rem;
+}
+button, input {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+label {
+    /* display: inline-block; */
+    margin-bottom: .5rem;
+}
+.page-doctor-profile .doctor_profile {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+}
+.page-doctor-profile .doctor_profile {
+    background: #fff;
+    padding-bottom: 3rem;
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.no-gutters>.col, .page-center-individual .no-gutters>.centerTab__header__link, .no-gutters>[class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+@media (min-width: 992px){
+    .col-lg-5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.66667%;
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .page-center-individual .centerTab__header__link, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
+}
+.page-doctor-profile .doctor {
+    box-shadow: none !important;
+}
+
+.page-doctor-profile .doctor {
+    margin-top: 0;
+    padding: 0;
+    /* -webkit-box-shadow: none!important; */
+    /* box-shadow: none!important; */
+}
+.doctor {
+    background: #fff;
+    /* margin-top: 2rem; */
+    /* padding: 2rem 15px; */
+}
+.page-doctor-profile .doctor__image__wrapper {
+    background-color: initial;
+}
+
+.page-doctor-profile .doctor__image__wrapper {
+    /* background: #6ecbb8; */
+    background: linear-gradient(to bottom,#6ecbb8 0%,#6ecbb8 calc(50% + 40px),#fff calc(50% + 40px),#fff 100%);
+    padding-top: 80px;
+}
+img#p_lt_zoneContent_masterPlaceholder_p_lt_zoneContentCenter_BIHDoctorDetail2019_divImg {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+}
+.doctor__image {
+    display: block;
+    margin: 0 auto;
+    /* width: 50%; */
+}
+.rounded-circle, .doctor__image, .page-appointment-review .infoWrapper .info__image {
+    border-radius: 50%!important;
+}
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    /* height: auto; */
+}
+img {
+    border-style: none;
+}
+.page-doctor-profile .doctor__specialty__mobile {
+    padding: 0 15px;
+}
+@media only screen and (min-width: 992px) {
+    .page-doctor-profile .reverse_order {
+        /* display: -webkit-box; */
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 992px){
+    .page-doctor-profile .reverse_order .doctor__action {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+}
+.page-doctor-profile .doctor__action {
+        padding: 1rem 15px 3rem;
+    }
+.justify-content-around, .doctor__action {
+
+        justify-content: space-around!important;
+    }
+.d-flex, .doctor__action, .newsletter .footer__contact__item__text, .map .footer__contact__item__text, .page-banner, .page-about .milestone__item, .page-center-individual .centerTab__header, .page-home #articles .articleFeatured, .page-package-center .package__text__price, .page-package-detail .package__text__price, .page-package-center .additional__text__dropdown .dropdown-menu .dropdown-item__text, .page-package-detail .additional__text__dropdown .dropdown-menu .dropdown-item__text, .page-package-detail .packageListing__cost, .page-appointment-review .infoWrapper .info, .tab--item {
+        display: -webkit-box!important;
+        display: -ms-flexbox!important;
+        display: flex!important;
+    }
+.page-doctor-profile .doctor__action__btn {
+    color: #646569;
+}
+.doctor__action__btn {
+     /* background-image: initial; */
+     background-color: initial;
+     text-decoration-color: initial !important;
+ }
+.doctor__action__btn--call {
+    background-image: url('/static/img/homeimg/call-rounded-gray.png');
+}
+.doctor__action__btn--call {
+    background-image: url('/static/img/homeimg/call-rounded-gray.png');
+}
+.doctor__action__btn {
+    background: center top 15% no-repeat;
+    background-size: 50% auto;
+    font-size: .65rem;
+    padding-top: 25%;
+    text-align: center;
+    text-decoration: none!important;
+    text-transform: uppercase;
+    width: 33%;
+}
+.doctor__action__btn+.doctor__action__btn {
+    border-left: 1px solid #d1d3d3;
+}
+.doctor__action__btn--inquiry {
+    background-image: url('/static/img/homeimg/inquiry-rounded-gray.png');
+}
+.doctor__action__btn--appointment {
+    background-image: url('/static/img/homeimg/appointment-rounded-gray.png');
+}
+.page-doctor-profile .doctor__specialty {
+    padding: 0 30px;
+}
+
+.page-doctor-profile .doctor__specialty__item:not(:last-child) {
+    border-bottom: 1px solid #d1d3d3;
+}
+.page-doctor-profile .doctor__specialty__item {
+    padding: 1.5rem 0 .5rem;
+}
+.page-doctor-profile .doctor__specialty__item h3, .page-doctor-profile .doctor__specialty__item h5 {
+    color: #0bb288;
+}
+.page-doctor-profile .doctor__specialty__item h5 {
+    padding-bottom: .8rem;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}

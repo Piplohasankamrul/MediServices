@@ -1,0 +1,2049 @@
+{% load static %}
+
+<!---------------             Internal Medicine Geriatric           ---------------------------------->
+<section>
+    <div class="Internal_Medicine_Geriatric" style="display:none;">
+        <div class="doctor_active">
+        {% for Internal_Medicine_Geriatric_doctor in doctor_cat21 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Internal_Medicine_Geriatric_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Internal_Medicine_Geriatric_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Internal_Medicine_Geriatric_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Internal_Medicine_Geriatric_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Internal_Medicine_Geriatric_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Internal_Medicine_Geriatric_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Internal_Medicine_Geriatric_doctor.m_t}} || {{Internal_Medicine_Geriatric_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Internal_Medicine_Geriatric_doctor.m_l}} || {{ Internal_Medicine_Geriatric_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Internal_Medicine_Geriatric_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Internal_Medicine_Geriatric_doctor.m_t}} || {{Internal_Medicine_Geriatric_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Internal_Medicine_Geriatric_doctor.m_l}} || {{ Internal_Medicine_Geriatric_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Internal_Medicine_Geriatric_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Internal_Medicine_Geriatric_doctor.m_t}} || {{Internal_Medicine_Geriatric_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Internal_Medicine_Geriatric_doctor.m_l}} || {{ Internal_Medicine_Geriatric_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Internal_Medicine_Geriatric_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Internal_Medicine_Geriatric_doctor.m_t}} || {{Internal_Medicine_Geriatric_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Internal_Medicine_Geriatric_doctor.m_l}} || {{ Internal_Medicine_Geriatric_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Internal_Medicine_Geriatric_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Internal_Medicine_Geriatric_doctor.m_t}} || {{Internal_Medicine_Geriatric_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Internal_Medicine_Geriatric_doctor.m_l}} || {{ Internal_Medicine_Geriatric_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Internal_Medicine_Geriatric_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------            Medical Genetics           ---------------------------------->
+<section>
+    <div class="Medical_Genetics" style="display:none;">
+        <div class="doctor_active">
+        {% for Medical_Genetics_doctor in doctor_cat22 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Medical_Genetics_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Medical_Genetics_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Medical_Genetics_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Medical_Genetics_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Medical_Genetics_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Medical_Genetics_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Medical_Genetics_doctor.m_t}} || {{Medical_Genetics_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Medical_Genetics_doctor.m_l}} || {{ Medical_Genetics_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Medical_Genetics_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Medical_Genetics_doctor.m_t}} || {{Medical_Genetics_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Medical_Genetics_doctor.m_l}} || {{ Medical_Genetics_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Medical_Genetics_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Medical_Genetics_doctor.m_t}} || {{Medical_Genetics_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Medical_Genetics_doctor.m_l}} || {{ Medical_Genetics_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Medical_Genetics_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Medical_Genetics_doctor.m_t}} || {{Medical_Genetics_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Medical_Genetics_doctor.m_l}} || {{ Medical_Genetics_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Medical_Genetics_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Medical_Genetics_doctor.m_t}} || {{Medical_Genetics_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Medical_Genetics_doctor.m_l}} || {{ Medical_Genetics_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Medical_Genetics_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------             Medicine           ---------------------------------->
+<section>
+    <div class="Medicine" style="display:none;">
+        <div class="doctor_active">
+        {% for Medicine_doctor in doctor_cat23 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Medicine_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Medicine_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Medicine_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Medicine_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Medicine_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Medicine_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Medicine_doctor.m_t}} || {{Medicine_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Medicine_doctor.m_l}} || {{ Medicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Medicine_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Medicine_doctor.m_t}} || {{Medicine_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Medicine_doctor.m_l}} || {{ Medicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Medicine_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Medicine_doctor.m_t}} || {{Medicine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Medicine_doctor.m_l}} || {{ Medicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Medicine_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Medicine_doctor.m_t}} || {{Medicine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Medicine_doctor.m_l}} || {{ Medicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Medicine_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Medicine_doctor.m_t}} || {{Medicine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Medicine_doctor.m_l}} || {{ Medicine_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Medicine_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+
+</section>
+<!---------------            Nephrology (Kidney)           ---------------------------------->
+<section>
+    <div class="Nephrology_Kidney" style="display:none;">
+        <div class="doctor_active">
+        {% for Nephrology_Kidney_doctor in doctor_cat24 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Nephrology_Kidney_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Nephrology_Kidney_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Nephrology_Kidney_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Nephrology_Kidney_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Nephrology_Kidney_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Nephrology_Kidney_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Nephrology_Kidney_doctor.m_t}} || {{Nephrology_Kidney_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Nephrology_Kidney_doctor.m_l}} || {{ Nephrology_Kidney_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Nephrology_Kidney_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Nephrology_Kidney_doctor.m_t}} || {{Nephrology_Kidney_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Nephrology_Kidney_doctor.m_l}} || {{ Nephrology_Kidney_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Nephrology_Kidney_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Nephrology_Kidney_doctor.m_t}} || {{Nephrology_Kidney_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Nephrology_Kidney_doctor.m_l}} || {{ Nephrology_Kidney_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Nephrology_Kidney_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Nephrology_Kidney_doctor.m_t}} || {{Nephrology_Kidney_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Nephrology_Kidney_doctor.m_l}} || {{ Nephrology_Kidney_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Nephrology_Kidney_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Nephrology_Kidney_doctor.m_t}} || {{Nephrology_Kidney_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Nephrology_Kidney_doctor.m_l}} || {{ Nephrology_Kidney_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Nephrology_Kidney_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------           Neurology (Nerve)          ---------------------------------->
+<section>
+    <div class="Neurology_Nerve" style="display:none;">
+        <div class="doctor_active">
+        {% for Neurology_Nerve_doctor in doctor_cat25 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Neurology_Nerve_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Neurology_Nerve_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Neurology_Nerve_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Neurology_Nerve_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Neurology_Nerve_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Neurology_Nerve_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Neurology_Nerve_doctor.m_t}} || {{Neurology_Nerve_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Neurology_Nerve_doctor.m_l}} || {{ Neurology_Nerve_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Neurology_Nerve_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Neurology_Nerve_doctor.m_t}} || {{Neurology_Nerve_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Neurology_Nerve_doctor.m_l}} || {{ Neurology_Nerve_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Neurology_Nerve_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Neurology_Nerve_doctor.m_t}} || {{Neurology_Nerve_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Neurology_Nerve_doctor.m_l}} || {{ Neurology_Nerve_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Neurology_Nerve_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Neurology_Nerve_doctor.m_t}} || {{Neurology_Nerve_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Neurology_Nerve_doctor.m_l}} || {{ Neurology_Nerve_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Neurology_Nerve_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Neurology_Nerve_doctor.m_t}} || {{Neurology_Nerve_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Neurology_Nerve_doctor.m_l}} || {{ Neurology_Nerve_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Neurology_Nerve_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------            Neuromedicine           ---------------------------------->
+<section>
+    <div class="Neuromedicine" style="display:none;">
+        <div class="doctor_active">
+        {% for Neuromedicine_doctor in doctor_cat26 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Neuromedicine_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Neuromedicine_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Neuromedicine_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Neuromedicine_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Neuromedicine_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Neuromedicine_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Neuromedicine_doctor.m_t}} || {{Neuromedicine_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Neuromedicine_doctor.m_l}} || {{ Neuromedicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Neuromedicine_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Neuromedicine_doctor.m_t}} || {{Neuromedicine_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Neuromedicine_doctor.m_l}} || {{ Neuromedicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Neuromedicine_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Neuromedicine_doctor.m_t}} || {{Neuromedicine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Neuromedicine_doctor.m_l}} || {{ Neuromedicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Neuromedicine_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Neuromedicine_doctor.m_t}} || {{Neuromedicine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Neuromedicine_doctor.m_l}} || {{ Neuromedicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Neuromedicine_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Neuromedicine_doctor.m_t}} || {{Neuromedicine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Neuromedicine_doctor.m_l}} || {{ Neuromedicine_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Neuromedicine_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------             Neurosurgery           ---------------------------------->
+<section>
+    <div class="Neurosurgery" style="display:none;">
+        <div class="doctor_active">
+        {% for Neurosurgery_doctor in doctor_cat27 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Neurosurgery_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Neurosurgery_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Neurosurgery_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Neurosurgery_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Neurosurgery_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Neurosurgery_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Neurosurgery_doctor.m_t}} || {{Neurosurgery_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Neurosurgery_doctor.m_l}} || {{ Neurosurgery_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Neurosurgery_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Neurosurgery_doctor.m_t}} || {{Neurosurgery_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Neurosurgery_doctor.m_l}} || {{ Neurosurgery_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Neurosurgery_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Neurosurgery_doctor.m_t}} || {{Neurosurgery_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Neurosurgery_doctor.m_l}} || {{ Neurosurgery_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Neurosurgery_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Neurosurgery_doctor.m_t}} || {{Neurosurgery_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Neurosurgery_doctor.m_l}} || {{ Neurosurgery_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Neurosurgery_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Neurosurgery_doctor.m_t}} || {{Neurosurgery_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Neurosurgery_doctor.m_l}} || {{ Neurosurgery_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Neurosurgery_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------             OB/GYN (Women)           ---------------------------------->
+<section>
+    <div class="OB_GYN_Women" style="display:none;">
+        <div class="doctor_active">
+        {% for OB_GYN_Women_doctor in doctor_cat28 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{OB_GYN_Women_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{OB_GYN_Women_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{OB_GYN_Women_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{OB_GYN_Women_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=OB_GYN_Women_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{OB_GYN_Women_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{OB_GYN_Women_doctor.m_t}} || {{OB_GYN_Women_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{OB_GYN_Women_doctor.m_l}} || {{ OB_GYN_Women_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{OB_GYN_Women_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{OB_GYN_Women_doctor.m_t}} || {{OB_GYN_Women_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{OB_GYN_Women_doctor.m_l}} || {{ OB_GYN_Women_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{OB_GYN_Women_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{OB_GYN_Women_doctor.m_t}} || {{OB_GYN_Women_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{OB_GYN_Women_doctor.m_l}} || {{ OB_GYN_Women_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{OB_GYN_Women_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{OB_GYN_Women_doctor.m_t}} || {{OB_GYN_Women_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{OB_GYN_Women_doctor.m_l}} || {{ OB_GYN_Women_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{OB_GYN_Women_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{OB_GYN_Women_doctor.m_t}} || {{OB_GYN_Women_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{OB_GYN_Women_doctor.m_l}} || {{ OB_GYN_Women_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=OB_GYN_Women_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------           Oncology (Cancer)           ---------------------------------->
+<section>
+    <div class="Oncology" style="display:none;">
+        <div class="doctor_active">
+        {% for Oncology_doctor in doctor_cat29 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Oncology_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Oncology_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Oncology_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Oncology_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Oncology_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Oncology_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Oncology_doctor.m_t}} || {{Oncology_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Oncology_doctor.m_l}} || {{ Oncology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Oncology_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Oncology_doctor.m_t}} || {{Oncology_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Oncology_doctor.m_l}} || {{ Oncology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Oncology_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Oncology_doctor.m_t}} || {{Oncology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Oncology_doctor.m_l}} || {{ Oncology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Oncology_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Oncology_doctor.m_t}} || {{Oncology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Oncology_doctor.m_l}} || {{ Oncology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Oncology_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Oncology_doctor.m_t}} || {{Oncology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Oncology_doctor.m_l}} || {{ Oncology_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Oncology_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------             Ophthalmology (Eye)           ---------------------------------->
+<section>
+    <div class="Ophthalmology" style="display:none;">
+        <div class="doctor_active">
+        {% for Ophthalmology_doctor in doctor_cat30 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Ophthalmology_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Ophthalmology_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Ophthalmology_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Ophthalmology_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Ophthalmology_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Ophthalmology_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Ophthalmology_doctor.m_t}} || {{Ophthalmology_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Ophthalmology_doctor.m_l}} || {{ Ophthalmology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Ophthalmology_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Ophthalmology_doctor.m_t}} || {{Ophthalmology_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Ophthalmology_doctor.m_l}} || {{ Ophthalmology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Ophthalmology_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Ophthalmology_doctor.m_t}} || {{Ophthalmology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Ophthalmology_doctor.m_l}} || {{ Ophthalmology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Ophthalmology_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Ophthalmology_doctor.m_t}} || {{Ophthalmology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Ophthalmology_doctor.m_l}} || {{ Ophthalmology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Ophthalmology_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Ophthalmology_doctor.m_t}} || {{Ophthalmology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Ophthalmology_doctor.m_l}} || {{ Ophthalmology_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Ophthalmology_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------            Orthopedics (Bone)           ---------------------------------->
+<section>
+    <div class="Orthopedics" style="display:none;">
+        <div class="doctor_active">
+        {% for Orthopedics_doctor in doctor_cat31 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Orthopedics_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Orthopedics_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Orthopedics_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Orthopedics_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Orthopedics_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Orthopedics_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Orthopedics_doctor.m_t}} || {{Orthopedics_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Orthopedics_doctor.m_l}} || {{ Orthopedics_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Orthopedics_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Orthopedics_doctor.m_t}} || {{Orthopedics_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Orthopedics_doctor.m_l}} || {{ Orthopedics_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Orthopedics_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Orthopedics_doctor.m_t}} || {{Orthopedics_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Orthopedics_doctor.m_l}} || {{ Orthopedics_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Orthopedics_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Orthopedics_doctor.m_t}} || {{Orthopedics_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Orthopedics_doctor.m_l}} || {{ Orthopedics_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Orthopedics_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Orthopedics_doctor.m_t}} || {{Orthopedics_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Orthopedics_doctor.m_l}} || {{ Orthopedics_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Orthopedics_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------           Otolaryngology (Ear, Nose, Throat)           ---------------------------------->
+<section>
+    <div class="Otolaryngology" style="display:none;">
+        <div class="doctor_active">
+        {% for Otolaryngology_doctor in doctor_cat32 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Otolaryngology_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Otolaryngology_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Otolaryngology_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Otolaryngology_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Otolaryngology_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Otolaryngology_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Otolaryngology_doctor.m_t}} || {{Otolaryngology_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Otolaryngology_doctor.m_l}} || {{ Otolaryngology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Otolaryngology_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Otolaryngology_doctor.m_t}} || {{Otolaryngology_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Otolaryngology_doctor.m_l}} || {{ Otolaryngology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Otolaryngology_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Otolaryngology_doctor.m_t}} || {{Otolaryngology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Otolaryngology_doctor.m_l}} || {{ Otolaryngology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Otolaryngology_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Otolaryngology_doctor.m_t}} || {{Otolaryngology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Otolaryngology_doctor.m_l}} || {{ Otolaryngology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Otolaryngology_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Otolaryngology_doctor.m_t}} || {{Otolaryngology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Otolaryngology_doctor.m_l}} || {{ Otolaryngology_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Otolaryngology_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------            Pathology (Clinical Pathology)           ---------------------------------->
+<section>
+    <div class="Pathology_Clinical_Pathology" style="display:none;">
+        <div class="doctor_active">
+        {% for Pathology_Clinical_Pathology_doctor in doctor_cat33 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Pathology_Clinical_Pathology_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Pathology_Clinical_Pathology_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Pathology_Clinical_Pathology_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Pathology_Clinical_Pathology_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Pathology_Clinical_Pathology_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Pathology_Clinical_Pathology_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Pathology_Clinical_Pathology_doctor.m_t}} || {{Pathology_Clinical_Pathology_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Pathology_Clinical_Pathology_doctor.m_l}} || {{ Pathology_Clinical_Pathology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Pathology_Clinical_Pathology_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Pathology_Clinical_Pathology_doctor.m_t}} || {{Pathology_Clinical_Pathology_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Pathology_Clinical_Pathology_doctor.m_l}} || {{ Pathology_Clinical_Pathology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Pathology_Clinical_Pathology_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Pathology_Clinical_Pathology_doctor.m_t}} || {{Pathology_Clinical_Pathology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Pathology_Clinical_Pathology_doctor.m_l}} || {{ Pathology_Clinical_Pathology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Pathology_Clinical_Pathology_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Pathology_Clinical_Pathology_doctor.m_t}} || {{Pathology_Clinical_Pathology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Pathology_Clinical_Pathology_doctor.m_l}} || {{ Pathology_Clinical_Pathology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Pathology_Clinical_Pathology_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Pathology_Clinical_Pathology_doctor.m_t}} || {{Pathology_Clinical_Pathology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Pathology_Clinical_Pathology_doctor.m_l}} || {{ Pathology_Clinical_Pathology_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Pathology_Clinical_Pathology_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------            Pathology (Surgical Pathology)           ---------------------------------->
+<section>
+    <div class="Pathology_Surgical_Pathology" style="display:none;">
+        <div class="doctor_active">
+        {% for Pathology_Surgical_Pathology_doctor in doctor_cat34 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Pathology_Surgical_Pathology_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Pathology_Surgical_Pathology_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Pathology_Surgical_Pathology_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Pathology_Surgical_Pathology_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Pathology_Surgical_Pathology_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Pathology_Surgical_Pathology_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Pathology_Surgical_Pathology_doctor.m_t}} || {{Pathology_Surgical_Pathology_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Pathology_Surgical_Pathology_doctor.m_l}} || {{ Pathology_Surgical_Pathology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Pathology_Surgical_Pathology_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Pathology_Surgical_Pathology_doctor.m_t}} || {{Pathology_Surgical_Pathology_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Pathology_Surgical_Pathology_doctor.m_l}} || {{ Pathology_Surgical_Pathology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Pathology_Surgical_Pathology_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Pathology_Surgical_Pathology_doctor.m_t}} || {{Pathology_Surgical_Pathology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Pathology_Surgical_Pathology_doctor.m_l}} || {{ Pathology_Surgical_Pathology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Pathology_Surgical_Pathology_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Pathology_Surgical_Pathology_doctor.m_t}} || {{Pathology_Surgical_Pathology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Pathology_Surgical_Pathology_doctor.m_l}} || {{ Pathology_Surgical_Pathology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Pathology_Surgical_Pathology_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Pathology_Surgical_Pathology_doctor.m_t}} || {{Pathology_Surgical_Pathology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Pathology_Surgical_Pathology_doctor.m_l}} || {{ Pathology_Surgical_Pathology_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Pathology_Surgical_Pathology_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------            Pediatrics (Children)           ---------------------------------->
+<section>
+    <div class="Pediatrics" style="display:none;">
+        <div class="doctor_active">
+        {% for Pediatrics_doctor in doctor_cat35 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Pediatrics_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Pediatrics_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Pediatrics_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Pediatrics_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Pediatrics_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Pediatrics_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Pediatrics_doctor.m_t}} || {{Pediatrics_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Pediatrics_doctor.m_l}} || {{ Pediatrics_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Pediatrics_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Pediatrics_doctor.m_t}} || {{Pediatrics_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Pediatrics_doctor.m_l}} || {{ Pediatrics_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Pediatrics_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Pediatrics_doctor.m_t}} || {{Pediatrics_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Pediatrics_doctor.m_l}} || {{ Pediatrics_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Pediatrics_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Pediatrics_doctor.m_t}} || {{Pediatrics_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Pediatrics_doctor.m_l}} || {{ Pediatrics_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Pediatrics_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Pediatrics_doctor.m_t}} || {{Pediatrics_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Pediatrics_doctor.m_l}} || {{ Pediatrics_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Pediatrics_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------             Physical Medicine and Rehabilitation (PM&amp;R)           ---------------------------------->
+<section>
+    <div class="Physical_Medicine_Rehabilitation" style="display:none;">
+        <div class="doctor_active">
+        {% for Physical_Medicine_Rehabilitation_doctor in doctor_cat36 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Physical_Medicine_Rehabilitation_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Physical_Medicine_Rehabilitation_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Physical_Medicine_Rehabilitation_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Physical_Medicine_Rehabilitation_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Physical_Medicine_Rehabilitation_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Physical_Medicine_Rehabilitation_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Physical_Medicine_Rehabilitation_doctor.m_t}} || {{Physical_Medicine_Rehabilitation_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Physical_Medicine_Rehabilitation_doctor.m_l}} || {{ Physical_Medicine_Rehabilitation_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Physical_Medicine_Rehabilitation_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Physical_Medicine_Rehabilitation_doctor.m_t}} || {{Physical_Medicine_Rehabilitation_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Physical_Medicine_Rehabilitation_doctor.m_l}} || {{ Physical_Medicine_Rehabilitation_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Physical_Medicine_Rehabilitation_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Physical_Medicine_Rehabilitation_doctor.m_t}} || {{Physical_Medicine_Rehabilitation_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Physical_Medicine_Rehabilitation_doctor.m_l}} || {{ Physical_Medicine_Rehabilitation_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Physical_Medicine_Rehabilitation_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Physical_Medicine_Rehabilitation_doctor.m_t}} || {{Physical_Medicine_Rehabilitation_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Physical_Medicine_Rehabilitation_doctor.m_l}} || {{ Physical_Medicine_Rehabilitation_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Physical_Medicine_Rehabilitation_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Physical_Medicine_Rehabilitation_doctor.m_t}} || {{Physical_Medicine_Rehabilitation_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Physical_Medicine_Rehabilitation_doctor.m_l}} || {{ Physical_Medicine_Rehabilitation_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Physical_Medicine_Rehabilitation_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------            Plastic Surgery           ---------------------------------->
+<section>
+    <div class="Plastic_Surgery" style="display:none;">
+        <div class="doctor_active">
+        {% for Plastic_Surgery_doctor in doctor_cat37 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Plastic_Surgery_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Plastic_Surgery_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Plastic_Surgery_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Plastic_Surgery_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Plastic_Surgery_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Plastic_Surgery_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Plastic_Surgery_doctor.m_t}} || {{Plastic_Surgery_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Plastic_Surgery_doctor.m_l}} || {{ Plastic_Surgery_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Plastic_Surgery_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Plastic_Surgery_doctor.m_t}} || {{Plastic_Surgery_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Plastic_Surgery_doctor.m_l}} || {{ Plastic_Surgery_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Plastic_Surgery_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Plastic_Surgery_doctor.m_t}} || {{Plastic_Surgery_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Plastic_Surgery_doctor.m_l}} || {{ Plastic_Surgery_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Plastic_Surgery_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Plastic_Surgery_doctor.m_t}} || {{Plastic_Surgery_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Plastic_Surgery_doctor.m_l}} || {{ Plastic_Surgery_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Plastic_Surgery_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Plastic_Surgery_doctor.m_t}} || {{Plastic_Surgery_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Plastic_Surgery_doctor.m_l}} || {{ Plastic_Surgery_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Plastic_Surgery_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------            Preventive_Medicine           ---------------------------------->
+<section>
+    <div class="Preventive_Medicine" style="display:none;">
+        <div class="doctor_active">
+        {% for Preventive_Medicine_doctor in doctor_cat38 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Preventive_Medicine_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Preventive_Medicine_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Preventive_Medicine_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Preventive_Medicine_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Preventive_Medicine_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Preventive_Medicine_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Preventive_Medicine_doctor.m_t}} || {{Preventive_Medicine_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Preventive_Medicine_doctor.m_l}} || {{ Preventive_Medicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Preventive_Medicine_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Preventive_Medicine_doctor.m_t}} || {{Preventive_Medicine_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Preventive_Medicine_doctor.m_l}} || {{ Preventive_Medicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Preventive_Medicine_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Preventive_Medicine_doctor.m_t}} || {{Preventive_Medicine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Preventive_Medicine_doctor.m_l}} || {{ Preventive_Medicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Preventive_Medicine_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Preventive_Medicine_doctor.m_t}} || {{Preventive_Medicine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Preventive_Medicine_doctor.m_l}} || {{ Preventive_Medicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Preventive_Medicine_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Preventive_Medicine_doctor.m_t}} || {{Preventive_Medicine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Preventive_Medicine_doctor.m_l}} || {{ Preventive_Medicine_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Preventive_Medicine_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------        Preventive Medicine (Check up)          ---------------------------------->
+<section>
+    <div class="Preventive_Medicine_Check_up" style="display:none;">
+        <div class="doctor_active">
+        {% for Preventive_Medicine_Check_up_doctor in doctor_cat39 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Preventive_Medicine_Check_up_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Preventive_Medicine_Check_up_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Preventive_Medicine_Check_up_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Preventive_Medicine_Check_up_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Preventive_Medicine_Check_up_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Preventive_Medicine_Check_up_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Preventive_Medicine_Check_up_doctor.m_t}} || {{Preventive_Medicine_Check_up_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Preventive_Medicine_Check_up_doctor.m_l}} || {{ Preventive_Medicine_Check_up_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Preventive_Medicine_Check_up_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Preventive_Medicine_Check_up_doctor.m_t}} || {{Preventive_Medicine_Check_up_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Preventive_Medicine_Check_up_doctor.m_l}} || {{ Preventive_Medicine_Check_up_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Preventive_Medicine_Check_up_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Preventive_Medicine_Check_up_doctor.m_t}} || {{Preventive_Medicine_Check_up_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Preventive_Medicine_Check_up_doctor.m_l}} || {{ Preventive_Medicine_Check_up_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Preventive_Medicine_Check_up_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Preventive_Medicine_Check_up_doctor.m_t}} || {{Preventive_Medicine_Check_up_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Preventive_Medicine_Check_up_doctor.m_l}} || {{ Preventive_Medicine_Check_up_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Preventive_Medicine_Check_up_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Preventive_Medicine_Check_up_doctor.m_t}} || {{Preventive_Medicine_Check_up_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Preventive_Medicine_Check_up_doctor.m_l}} || {{ Preventive_Medicine_Check_up_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Preventive_Medicine_Check_up_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------            Pulmonology (Lungs)           ---------------------------------->
+<section>
+    <div class="Pulmonology" style="display:none;">
+        <div class="doctor_active">
+        {% for Pulmonology_doctor in doctor_cat40 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Pulmonology_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Pulmonology_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Pulmonology_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Pulmonology_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Pulmonology_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Pulmonology_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Pulmonology_doctor.m_t}} || {{Pulmonology_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Pulmonology_doctor.m_l}} || {{ Pulmonology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Pulmonology_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Pulmonology_doctor.m_t}} || {{Pulmonology_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Pulmonology_doctor.m_l}} || {{ Pulmonology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Pulmonology_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Pulmonology_doctor.m_t}} || {{Pulmonology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Pulmonology_doctor.m_l}} || {{ Pulmonology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Pulmonology_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Pulmonology_doctor.m_t}} || {{Pulmonology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Pulmonology_doctor.m_l}} || {{ Pulmonology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Pulmonology_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Pulmonology_doctor.m_t}} || {{Pulmonology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Pulmonology_doctor.m_l}} || {{ Pulmonology_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Pulmonology_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+    </div>
+    </div>
+</section>
+<!---------------             Radiology           ---------------------------------->
+<section>
+    <div class="Radiology" style="display:none;">
+        <div class="doctor_active">
+        {% for Radiology_doctor in doctor_cat41 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Radiology_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Radiology_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Radiology_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Radiology_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Radiology_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Radiology_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Radiology_doctor.m_t}} || {{Radiology_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Radiology_doctor.m_l}} || {{ Radiology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Radiology_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Radiology_doctor.m_t}} || {{Radiology_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Radiology_doctor.m_l}} || {{ Radiology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Radiology_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Radiology_doctor.m_t}} || {{Radiology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Radiology_doctor.m_l}} || {{ Radiology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Radiology_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Radiology_doctor.m_t}} || {{Radiology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Radiology_doctor.m_l}} || {{ Radiology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Radiology_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Radiology_doctor.m_t}} || {{Radiology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Radiology_doctor.m_l}} || {{ Radiology_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Radiology_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------           Rheumatology (Muscle &amp; Joint)           ---------------------------------->
+<section>
+    <div class="Rheumatology" style="display:none;">
+        <div class="doctor_active">
+        {% for Rheumatology_doctor in doctor_cat42 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Rheumatology_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Rheumatology_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Rheumatology_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Rheumatology_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Rheumatology_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Rheumatology_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Rheumatology_doctor.m_t}} || {{Rheumatology_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Rheumatology_doctor.m_l}} || {{ Rheumatology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Rheumatology_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Rheumatology_doctor.m_t}} || {{Rheumatology_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Rheumatology_doctor.m_l}} || {{ Rheumatology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Rheumatology_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Rheumatology_doctor.m_t}} || {{Rheumatology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Rheumatology_doctor.m_l}} || {{ Rheumatology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Rheumatology_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Rheumatology_doctor.m_t}} || {{Rheumatology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Rheumatology_doctor.m_l}} || {{ Rheumatology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Rheumatology_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Rheumatology_doctor.m_t}} || {{Rheumatology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Rheumatology_doctor.m_l}} || {{ Rheumatology_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Rheumatology_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------            Sleep Medicine           ---------------------------------->
+<section>
+    <div class="Sleep_Medicine" style="display:none;">
+        <div class="doctor_active">
+        {% for Sleep_Medicine_doctor in doctor_cat43 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Sleep_Medicine_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Sleep_Medicine_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Sleep_Medicine_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Sleep_Medicine_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Sleep_Medicine_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Sleep_Medicine_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Sleep_Medicine_doctor.m_t}} || {{Sleep_Medicine_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Sleep_Medicine_doctor.m_l}} || {{ Sleep_Medicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Sleep_Medicine_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Sleep_Medicine_doctor.m_t}} || {{Sleep_Medicine_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Sleep_Medicine_doctor.m_l}} || {{ Sleep_Medicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Sleep_Medicine_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Sleep_Medicine_doctor.m_t}} || {{Sleep_Medicine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Sleep_Medicine_doctor.m_l}} || {{ Sleep_Medicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Sleep_Medicine_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Sleep_Medicine_doctor.m_t}} || {{Sleep_Medicine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Sleep_Medicine_doctor.m_l}} || {{ Sleep_Medicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Sleep_Medicine_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Sleep_Medicine_doctor.m_t}} || {{Sleep_Medicine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Sleep_Medicine_doctor.m_l}} || {{ Sleep_Medicine_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Sleep_Medicine_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------             Spine          ---------------------------------->
+<section>
+    <div class="Spine" style="display:none;">
+        <div class="doctor_active">
+        {% for Spine_doctor in doctor_cat44 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Spine_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Spine_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Spine_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Spine_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Spine_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Spine_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Spine_doctor.m_t}} || {{Spine_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Spine_doctor.m_l}} || {{ Spine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Spine_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Spine_doctor.m_t}} || {{Spine_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Spine_doctor.m_l}} || {{ Spine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Spine_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Spine_doctor.m_t}} || {{Spine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Spine_doctor.m_l}} || {{ Spine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Spine_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Spine_doctor.m_t}} || {{Spine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Spine_doctor.m_l}} || {{ Spine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Spine_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Spine_doctor.m_t}} || {{Spine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Spine_doctor.m_l}} || {{ Spine_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Spine_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------            Surgery           ---------------------------------->
+<section>
+    <div class="Surgery" style="display:none;">
+        <div class="doctor_active">
+        {% for Surgery_doctor in doctor_cat45 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Surgery_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Surgery_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Surgery_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Surgery_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Surgery_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Surgery_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Surgery_doctor.m_t}} || {{Surgery_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Surgery_doctor.m_l}} || {{ Surgery_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Surgery_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Surgery_doctor.m_t}} || {{Surgery_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Surgery_doctor.m_l}} || {{ Surgery_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Surgery_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Surgery_doctor.m_t}} || {{Surgery_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Surgery_doctor.m_l}} || {{ Surgery_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Surgery_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Surgery_doctor.m_t}} || {{Surgery_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Surgery_doctor.m_l}} || {{ Surgery_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Surgery_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Surgery_doctor.m_t}} || {{Surgery_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Surgery_doctor.m_l}} || {{ Surgery_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Surgery_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------            Toxicology &amp; Occupational Medicine          ---------------------------------->
+<section>
+    <div class="Toxicology_Occupational_Medicine" style="display:none;">
+        <div class="doctor_active">
+        {% for Toxicology_Occupational_Medicine_doctor in doctor_cat46 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Toxicology_Occupational_Medicine_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Toxicology_Occupational_Medicine_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Toxicology_Occupational_Medicine_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Toxicology_Occupational_Medicine_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Toxicology_Occupational_Medicine_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Toxicology_Occupational_Medicine_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Toxicology_Occupational_Medicine_doctor.m_t}} || {{Toxicology_Occupational_Medicine_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Toxicology_Occupational_Medicine_doctor.m_l}} || {{ Toxicology_Occupational_Medicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Toxicology_Occupational_Medicine_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Toxicology_Occupational_Medicine_doctor.m_t}} || {{Toxicology_Occupational_Medicine_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Toxicology_Occupational_Medicine_doctor.m_l}} || {{ Toxicology_Occupational_Medicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Toxicology_Occupational_Medicine_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Toxicology_Occupational_Medicine_doctor.m_t}} || {{Toxicology_Occupational_Medicine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Toxicology_Occupational_Medicine_doctor.m_l}} || {{ Toxicology_Occupational_Medicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Toxicology_Occupational_Medicine_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Toxicology_Occupational_Medicine_doctor.m_t}} || {{Toxicology_Occupational_Medicine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Toxicology_Occupational_Medicine_doctor.m_l}} || {{ Toxicology_Occupational_Medicine_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Toxicology_Occupational_Medicine_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Toxicology_Occupational_Medicine_doctor.m_t}} || {{Toxicology_Occupational_Medicine_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Toxicology_Occupational_Medicine_doctor.m_l}} || {{ Toxicology_Occupational_Medicine_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Toxicology_Occupational_Medicine_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+<!---------------            Transplant Hepatology           ---------------------------------->
+<section>
+    <div class="Transplant_Hepatology" style="display:none;">
+        <div class="doctor_active">
+        {% for Transplant_Hepatology_doctor in doctor_cat47 %}
+            <!--------------1st---------------------->
+            <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+                <div class="doctor">
+                    <img src="{{Transplant_Hepatology_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                    <p class="doctor__name">{{Transplant_Hepatology_doctor.name}} </p>
+                    <p class="doctor__specialties__title">{{Transplant_Hepatology_doctor.d_s_title}}</p>
+                    <p class="doctor__specialies__text">{{Transplant_Hepatology_doctor.d_s_text}}<br></p>
+                    <a href="{% url 'doctor_profile' id=Transplant_Hepatology_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                    <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                        <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                        <div id="accordian-213074" class="accordian--item--content collapse ">
+                            <div class="doctor__specialty__item">
+                                <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                    <thead>
+                                    <tr>
+                                        <th width="15%">Day</th>
+                                        <th width="30%">Time</th>
+                                        <th width="55%">Location</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>{{Transplant_Hepatology_doctor.d1}}<span class="value-day">1</span></td>
+                                        <td>{{Transplant_Hepatology_doctor.m_t}} || {{Transplant_Hepatology_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                        <td>{{Transplant_Hepatology_doctor.m_l}} || {{ Transplant_Hepatology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Transplant_Hepatology_doctor.d2}}<span class="value-day">2</span></td>
+                                        <td>{{Transplant_Hepatology_doctor.m_t}} || {{Transplant_Hepatology_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                        <td>{{Transplant_Hepatology_doctor.m_l}} || {{ Transplant_Hepatology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Transplant_Hepatology_doctor.d3}}<span class="value-day">3</span></td>
+                                        <td>{{Transplant_Hepatology_doctor.m_t}} || {{Transplant_Hepatology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                        <td>{{Transplant_Hepatology_doctor.m_l}} || {{ Transplant_Hepatology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Transplant_Hepatology_doctor.d4}}<span class="value-day">4</span></td>
+                                        <td>{{Transplant_Hepatology_doctor.m_t}} || {{Transplant_Hepatology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Transplant_Hepatology_doctor.m_l}} || {{ Transplant_Hepatology_doctor.e_l }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>{{Transplant_Hepatology_doctor.d5}}<span class="value-day">5</span></td>
+                                        <td>{{Transplant_Hepatology_doctor.m_t}} || {{Transplant_Hepatology_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                        <td>{{Transplant_Hepatology_doctor.m_l}} || {{ Transplant_Hepatology_doctor.e_l }}</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="doctor__action">
+                        <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                        <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                        <a href="{% url 'Appointment_Book' id=Transplant_Hepatology_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+
+        {% endfor %}
+
+
+        </div></div>
+</section>
+
+<!---------------            Urology (Genito-Urinary)           ---------------------------------->
+<section>
+<div class="Urology_Genito_Urinary" style="display:none;">
+    <div class="doctor_active">
+    {% for Urology_Genito_Urinary_doctor in doctor_cat48 %}
+        <!--------------1st---------------------->
+        <div class="col-12 col-lg-4" data-bodyid="Male_Front_Mid, Female_Front_Mid" data-itemid="1" data-sickid="symptom_con228">
+            <div class="doctor">
+                <img src="{{Urology_Genito_Urinary_doctor.imageURL}}" alt="" class="doctor__image" style="width:128px;height:128px;object-fit:cover;object-position:top;">
+                <p class="doctor__name">{{Urology_Genito_Urinary_doctor.name}} </p>
+                <p class="doctor__specialties__title">{{Urology_Genito_Urinary_doctor.d_s_title}}</p>
+                <p class="doctor__specialies__text">{{Urology_Genito_Urinary_doctor.d_s_text}}<br></p>
+                <a href="{% url 'doctor_profile' id=Urology_Genito_Urinary_doctor.id%}" style="margin-top: 0.7em;" class="doctor__btnProfile" target='doctor_profile'>View Profile</a>
+                <div class="accordian page-doctor-profile" id="accordianParent">         <div class="accordian--item">
+                    <a  data-toggle="collapse" data-target=".collapse" class="accordian--item--header collapsed">Schedule</a>
+                    <div id="accordian-213074" class="accordian--item--content collapse ">
+                        <div class="doctor__specialty__item">
+                            <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                <thead>
+                                <tr>
+                                    <th width="15%">Day</th>
+                                    <th width="30%">Time</th>
+                                    <th width="55%">Location</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td>{{Urology_Genito_Urinary_doctor.d1}}<span class="value-day">1</span></td>
+                                    <td>{{Urology_Genito_Urinary_doctor.m_t}} || {{Urology_Genito_Urinary_doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                    <td>{{Urology_Genito_Urinary_doctor.m_l}} || {{ Urology_Genito_Urinary_doctor.e_l }}</td>
+                                </tr>
+                                <tr>
+                                    <td>{{Urology_Genito_Urinary_doctor.d2}}<span class="value-day">2</span></td>
+                                    <td>{{Urology_Genito_Urinary_doctor.m_t}} || {{Urology_Genito_Urinary_doctor.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                    <td>{{Urology_Genito_Urinary_doctor.m_l}} || {{ Urology_Genito_Urinary_doctor.e_l }}</td>
+                                </tr>
+                                <tr>
+                                    <td>{{Urology_Genito_Urinary_doctor.d3}}<span class="value-day">3</span></td>
+                                    <td>{{Urology_Genito_Urinary_doctor.m_t}} || {{Urology_Genito_Urinary_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                    <td>{{Urology_Genito_Urinary_doctor.m_l}} || {{ Urology_Genito_Urinary_doctor.e_l }}</td>
+                                </tr>
+                                <tr>
+                                    <td>{{Urology_Genito_Urinary_doctor.d4}}<span class="value-day">4</span></td>
+                                    <td>{{Urology_Genito_Urinary_doctor.m_t}} || {{Urology_Genito_Urinary_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                    <td>{{Urology_Genito_Urinary_doctor.m_l}} || {{ Urology_Genito_Urinary_doctor.e_l }}</td>
+                                </tr>
+                                <tr>
+                                    <td>{{Urology_Genito_Urinary_doctor.d5}}<span class="value-day">5</span></td>
+                                    <td>{{Urology_Genito_Urinary_doctor.m_t}} || {{Urology_Genito_Urinary_doctor.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                    <td>{{Urology_Genito_Urinary_doctor.m_l}} || {{ Urology_Genito_Urinary_doctor.e_l }}</td>
+                                </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="doctor__action">
+                    <a href="tel:01612713248" class="doctor__action__btn doctor__action__btn--call">CALL FOR APPOINTMENT</a>
+                    <a href="/en/contact-us/inquiry?doctorid=213074" class="doctor__action__btn doctor__action__btn--inquiry">SEND AN INQUIRY</a>
+                    <a href="{% url 'Appointment_Book' id=Urology_Genito_Urinary_doctor.id %}" class="doctor__action__btn doctor__action__btn--appointment" >BOOK APPOINTMENT</a>
+                </div>
+            </div>
+        </div>
+
+    {% endfor %}
+
+
+</div>
+</div>
+</section>

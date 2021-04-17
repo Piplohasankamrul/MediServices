@@ -1,0 +1,259 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}
+    {% if user.id is not None %}
+        {{ request.user.username }}
+    {% endif %}
+
+{% endblock title %}
+{% block description %}
+    {{setting.description}}
+{% endblock description %}">
+{% block keywords %}
+
+{% endblock keywords %}">
+{% block header %}
+    {% include 'header.html' %}
+{% endblock header %}
+{% block mainbody %}
+    <!-- Begin Li's Breadcrumb Area -->
+    <div class="breadcrumb-area">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <ul>
+                    <li><a href="{% url 'fiddoctor' %}">Home</a></li>
+                    <li class="active">Appointment Booking</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                    {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
+                    {{ message }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+
+    <div id="BookAppointment">
+        <div class="row nav nav-fill tabsBar" role="tablist" style="margin-bottom: 0px;">
+            <a href="#tab-2" class="col-4 col-lg-3 tabHeader active" role="tab" data-toggle="tab" aria-controls="tab-2" aria-selected="true" id="aTab2">Book By Specialty</a>
+
+
+        </div>
+        <div class="row">
+            <div class="tabUnderline"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 bg-light">
+                <div class="row pt-2 pb-5 px-5" id="divStep1Section">
+                    <div class="tab-content col-12 col-lg-8">
+
+
+                        <div class="tab-pane fade active show" id="tab-2" role="tabpanel">
+                            <div class="form-group pt-4 row">
+                                <div class="col-lg-4 col-sm-12 radio">
+                                    <input value="choose" name="selectSpecialtyX" type="radio" id="iWillChooseMyDoctor" checked="checked">
+                                    <label for="iWillChooseMyDoctor">
+                                        I will choose my doctor
+                                    </label>
+                                </div>
+                            </div>
+
+
+
+                            <form method="POST" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                <div class="form-group" style="" >
+                                    <label >Search the doctor's name or surname</label>
+                                    <select name="doctor_name"  class="form-control" required aria-invalid="false">
+                                        <option value="{{doctor_profiles.name}}">{{doctor_profiles.name}}</option>
+                                        {% for doctor_name in doctors %}
+                                            <option value="{{doctor_name.id}}">{{doctor_name.name}}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <div class="row pt-2 pb-5 px-5" >
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="first_name">First name *</label>
+                                            <input placeholder="" type="text" value="{{ user.first_name}}" name="first_name">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="last_name">Last name *</label>
+                                            <input placeholder="" type="text" value="{{ user.last_name}}" name="last_name">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="phone">Primary Phone Number *</label>
+                                            <div class="input-group">
+                                                <div class="iti iti--allow-dropdown iti--separate-dial-code"><div class="iti__flag-container"><div class="iti__selected-flag" role="combobox" aria-owns="country-listbox" tabindex="0" title="Bangladesh (বাংলাদেশ): +880"><div class="iti__flag iti__bd"></div><div class="iti__selected-dial-code">+880</div><div class="iti__arrow"></div></div><ul class="iti__country-list iti__hide" id="country-listbox" aria-expanded="false" role="listbox" aria-activedescendant="iti-item-bd"><li class="iti__country iti__preferred" tabindex="-1" id="iti-item-us" role="option" data-dial-code="1" data-country-code="us"><div class="iti__flag-box"><div class="iti__flag iti__us"></div></div></li></ul>
+                                                </div>
+
+                                                    <input name="phone" type="text" value="{{ profile.phone }}"  class="form-control" placeholder="1812-345678" required="" autocomplete="off" style="padding-left: 90px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="email">Email *</label>
+                                            <input placeholder="" type="email" value="{{ user.email}}" name="email">
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="col-12 col-lg-3">
+                                        <div class="form-group">
+                                            <label for="dob">Age *</label>
+                                            <input name="age" value="" type="text"  class="form-control form-date datetimepicker" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-3">
+                                        <div class="form-group">
+                                            <label for="gender">Gender *</label>
+                                            <select name="gender"  class="form-control" required="">
+                                                <option value="">--- Please select ---</option>
+                                                <option value="{{ gender }}">Male</option>
+                                                <option value="{{ gender }}">Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label>City*</label>
+                                            <input name="city" type="text" class="form-control" value="{{ profile.city }}" required="">
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="form-group">
+                                            <label for="nationality">Country*</label>
+                                            <input name="country" type="text" class="form-control" value="{{ profile.country }}" required="">
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-lg-5 col-sm-12 radio">
+                                        <input value="preferred" name="ChooseDate" type="radio" id="preferredDate" checked="checked">
+                                        <label for="preferredDate">
+                                            Choose a preferred date
+                                        </label>
+                                    </div>
+
+
+                                </div>
+                                <div id="divPreferredDate">
+                                    <div class="form-group">
+                                        <label>Preferred date and time option 1 *</label>
+                                        <div class="row">
+                                            <div class="col-6 col-lg-8">
+                                                <input name="booking_date" type="text"  class="form-control form-date flatpickr-input" required="" >
+                                            </div>
+                                            <div class="col-6 col-lg-4">
+                                                <select name="booking_Time"  class="form-control"><option value="{{ booking_Time }}">Any time</option><option value="07:00 - 07:59">07:00 - 07:59</option><option value="08:00 - 08:59">08:00 - 08:59</option><option value="09:00 - 09:59">09:00 - 09:59</option><option value="10:00 - 10:59">10:00 - 10:59</option><option value="11:00 - 11:59">11:00 - 11:59</option><option value="12:00 - 12:59">12:00 - 12:59</option><option value="13:00 - 13:59">13:00 - 13:59</option><option value="14:00 - 14:59">14:00 - 14:59</option><option value="15:00 - 15:59">15:00 - 15:59</option><option value="16:00 - 16:59">16:00 - 16:59</option><option value="17:00 - 17:59">17:00 - 17:59</option></select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 text-center py-5">
+                                        <button type="submit" class="btn btn-primary btn-lg" >Submit</button>
+                                    </div>
+                                </div>
+
+
+                            </form>
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <!-- Doctor -->
+                        <div class="doctor page-doctor-profile" id="pick-doctor" style="">
+                            <img src="{{doctor_profiles.imageURL}}" alt="" class="doctor__image" style="height: 128px; width: 128px;">
+                            <p class="doctor__name">{{doctor_profiles.name}}</p>
+                            <p class="doctor__specialties__title">Specialties</p>
+                            <p class="doctor__specialies__text">{{doctor_profiles.d_s_text}}</p>
+                            <div id="divWorkDay" class="doctor__specialty__item">
+                                <h5>Doctor's Schedule</h5>
+                                <div class="doctor__schedule__text">
+                                    <table class="doctor-time" id="table_213074" width="100%" border="0" cellspacing="1" cellpadding="1">
+                                        <thead>
+                                        <tr>
+                                            <th width="15%">Day</th>
+                                            <th width="30%">Time</th>
+                                            <th width="55%">Location</th>
+                                        </tr>
+                                        </thead>
+
+                                        <tbody>
+                                        <tr>
+                                            <td>{{doctor_profiles.d1}}<span class="value-day">1</span></td>
+                                            <td>{{doctor_profiles.m_t}} || {{doctor.e_t}}<span class="value-time-start">10:00</span><span class="value-time-end">24:00</span></td>
+                                            <td>{{doctor_profiles.m_l}} || {{ doctor.e_l }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{doctor_profiles.d2}}<span class="value-day">2</span></td>
+                                            <td>{{doctor_profiles.m_t}} || {{doctor_profiles.e_t}}<span class="value-time-start">13:00</span><span class="value-time-end">20:00</span></td>
+                                            <td>{{doctor_profiles.m_l}} || {{ doctor_profiles.e_l }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{doctor_profiles.d3}}<span class="value-day">3</span></td>
+                                            <td>{{doctor_profiles.m_t}} || {{doctor_profiles.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">12:00</span></td>
+                                            <td>{{doctor_profiles.m_l}} || {{ doctor_profiles.e_l }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{doctor_profiles.d4}}<span class="value-day">4</span></td>
+                                            <td>{{doctor_profiles.m_t}} || {{doctor_profiles.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                            <td>{{doctor_profiles.m_l}} || {{ doctor_profiles.e_l }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{doctor_profiles.d5}}<span class="value-day">5</span></td>
+                                            <td>{{doctor_profiles.m_t}} || {{doctor_profiles.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                            <td>{{doctor_profiles.m_l}} || {{ doctor_profiles.e_l }}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{{doctor_profiles.d6}}<span class="value-day">7</span></td>
+                                            <td>{{doctor_profiles.m_t}} || {{doctor_profiles.e_t}}<span class="value-time-start">08:00</span><span class="value-time-end">16:00</span></td>
+                                            <td>{{doctor_profiles.m_l}} || {{doctor_profiles.e_l }}</td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Doctor -->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+{% endblock mainbody %}
+{% block footer %}
+    {% include 'footer.html' %}
+{% endblock footer %}

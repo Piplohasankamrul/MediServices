@@ -1,0 +1,1350 @@
+{% load static %}
+<section>
+<div class="psychiatry" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;" ><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px; padding-left: 15px; padding-right: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li>
+            </ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<!------------------cardiology (cardiact Imaging)-------------------------->
+<section>
+<div class="cardiology_cardiact_Imaging)" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul class="symptome-list active">
+        {% recursetree doctor_cat1 %}
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;" ><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<!------------------Allergy--------------------------------->
+<section>
+<div class="allergy" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul class="symptome-list active">
+        {% recursetree doctor_cat2 %}
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+
+<section>
+    <!------------------anesthelogy--------------------------------->
+<div class="anesthelogy" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat3 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Anti-Aging Medicine--------------------------------->
+<div class="anti_Aging_Medicine" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat4 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Aviation Medicine--------------------------------->
+<div class="aviation_Medicine" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat5 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Cardiology (Heart)--------------------------------->
+<div class="Cardiology_Heart" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat6 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Clinical Nutrition--------------------------------->
+<div class="Clinical_Nutrition" style="display:none;">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat7 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Critical Care Medicine (ICU)--------------------------------->
+<div class="Critical_Care_Medicine" style="display:none;">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat8 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Dental--------------------------------->
+<div class="Dental" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat9 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Dermatology (Skin)--------------------------------->
+<div class="Dermatology_Skin" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat10 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Emergency Medicine--------------------------------->
+<div class="Emergency_Medicine" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat11 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Endocrinology (Diabetes &amp; Thyroid &amp; Hormone &amp; Nutrition)--------------------------------->
+<div class="Endocrinology" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat12 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 200px; height: 5px; padding: 35px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 12px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Family Medicine (G.P.)--------------------------------->
+<div class="Family_Medicine" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat13 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Forensic Medicine--------------------------------->
+<div class="Forensic_Medicine" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat14 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Gastroenterology &amp; Hepatology--------------------------------->
+<div class="Gastroenterology_Hepatology" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat15 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------General Practice--------------------------------->
+<div class="General_Practice" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat16 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Hematology (Blood)--------------------------------->
+<div class="Hematology_Blood" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat17 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Hyperbaric &amp; Underwater Medicine--------------------------------->
+<div class="Hyperbaric_Underwater_Medicine" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat18 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Infectious Disease--------------------------------->
+<div class="Infectious_Disease" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat19 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Internal Medicine--------------------------------->
+<div class="Internal_Medicine" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat20 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Internal Medicine (Geriatric)--------------------------------->
+<div class="Internal_Medicine_Geriatric" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat21 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Medical Genetics--------------------------------->
+<div class="Medical_Genetics" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat22 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Medicine--------------------------------->
+<div class="Medicine" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat23 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Nephrology (Kidney)--------------------------------->
+<div class="Nephrology_Kidney" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat24 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Neurology (Nerve)--------------------------------->
+<div class="Neurology_Nerve" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat25 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Neuromedicine--------------------------------->
+<div class="Neuromedicine" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat26 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Neurosurgery--------------------------------->
+<div class="Neurosurgery" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat27 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Gynecologist--------------------------------->
+<div class="Gynecologist" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat28 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Oncology (Cancer)--------------------------------->
+<div class="Oncology_Cancer" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat29 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Ophthalmology (Eye)--------------------------------->
+<div class="Ophthalmology_Eye" style="display:none;">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat30 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Orthopedics (Bone)--------------------------------->
+<div class="Orthopedics_Bone" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat31 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Otolaryngology (Ear, Nose, Throat)--------------------------------->
+<div class="Otolaryngology" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat32 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Pathology (Clinical Pathology)--------------------------------->
+<div class="Pathology_Clinical_Pathology" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat33 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Pathology (Surgical Pathology)--------------------------------->
+<div class="Pathology_Surgical_Pathology" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat34 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Pediatrics (Children)--------------------------------->
+<div class="Pediatrics_Children" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat35 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Physical Medicine and Rehabilitation (PM&amp;R)--------------------------------->
+<div class="Physical_Medicine_and_Rehabilitation" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat36 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Plastic Surgery--------------------------------->
+<div class="Plastic_Surgery" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat37 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Preventive Medicine--------------------------------->
+<div class="Preventive_Medicine" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat38 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Preventive Medicine (Check up)--------------------------------->
+<div class="Preventive_Medicine_Check_up" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat39 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Pulmonology (Lungs)--------------------------------->
+<div class="Pulmonology_Lungs" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat40 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Proctologist--------------------------------->
+<div class="Proctologist" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat49 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Radiology--------------------------------->
+<div class="Radiology" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat41 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Rheumatology (Muscle &amp; Joint)--------------------------------->
+<div class="Rheumatology" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat42 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Sleep Medicine--------------------------------->
+<div class="Sleep_Medicine" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat43 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Spine--------------------------------->
+<div class="Spine" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat44 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Surgery--------------------------------->
+<div class="Surgery" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat45 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Toxicology &amp; Occupational Medicine--------------------------------->
+<div class="Toxicology_Occupational_Medicine" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat46 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Transplant Hepatology--------------------------------->
+<div class="Transplant_Hepatology" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat47 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>
+<section>
+    <!------------------Urology (Genito-Urinary)--------------------------------->
+<div class="Urology" style="display: none">
+<div  class="category-menu-list">
+    {% load mptt_tags %}
+    <ul>
+        {% recursetree doctor_cat48 %}
+            <ul class="symptome-list active">
+            <li class="right-menu" style=" width: 180px; height: 5px; padding: 30px; border: 1px solid #0bb288;"><a href="{% url 'category_doctor' id=node.id slug=node.slug %}" style="color: black; font-size: 15px;">
+                {{ node.title}}</a>
+                {% if not node.is_leaf_node %}
+                    <ul class="cat-mega-menu">
+                        <li class="right-menu cat-mega-title">
+                            <a href="{% url 'category_doctor' id=node.id slug=node.slug %}">Sub Category</a>
+                            <ul>
+                                <li><a href="{% url 'category_doctor' id=node.id slug=node.slug %}">{{ children }}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </li></ul>
+        {% endrecursetree %}
+    </ul>
+</div>
+</div>
+</section>

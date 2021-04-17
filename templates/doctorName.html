@@ -1,0 +1,117 @@
+{% load static %}
+
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group" style="" >
+            <label >Search the doctor's name or surname</label>
+            <select name="doctor_name"  class="form-control" required aria-invalid="false">
+                <option value="{{doctor_profiles.name}}">{{doctor_profiles.name}}</option>
+                {% for doctor_name in doctors %}
+                    <option value="{{doctor_name.id}}">{{doctor_name.name}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="row pt-2 pb-5 px-5" >
+            <div class="col-12 col-lg-6">
+                <div class="form-group">
+                    <label for="first_name">First name *</label>
+                    <input placeholder="" type="text" value="{{ user.first_name}}" name="first_name">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="form-group">
+                    <label for="lastname">Last name *</label>
+                    <input placeholder="" type="text" value="{{ user.last_name}}" name="last_name">
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="form-group">
+                    <label for="phone">Primary Phone Number *</label>
+                    <div class="input-group">
+                        <div class="iti iti--allow-dropdown iti--separate-dial-code"><div class="iti__flag-container"><div class="iti__selected-flag" role="combobox" aria-owns="country-listbox" tabindex="0" title="Bangladesh (বাংলাদেশ): +880"><div class="iti__flag iti__bd"></div><div class="iti__selected-dial-code">+880</div><div class="iti__arrow"></div></div><ul class="iti__country-list iti__hide" id="country-listbox" aria-expanded="false" role="listbox" aria-activedescendant="iti-item-bd"><li class="iti__country iti__preferred" tabindex="-1" id="iti-item-us" role="option" data-dial-code="1" data-country-code="us"><div class="iti__flag-box"><div class="iti__flag iti__us"></div></div></li></ul>
+                        </div>
+
+                            <input name="phone" type="text" value="{{ profile.phone }}"  class="form-control" placeholder="1812-345678" required="" autocomplete="off" style="padding-left: 90px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input placeholder="" type="email" value="{{ user.email}}" name="email">
+                </div>
+            </div>
+
+
+
+
+            <div class="col-12 col-lg-3">
+                <div class="form-group">
+                    <label for="dob">Age *</label>
+                    <input name="age" value="" type="text"  class="form-control form-date datetimepicker" required="">
+                </div>
+            </div>
+            <div class="col-12 col-lg-3">
+                <div class="form-group">
+                    <label for="gender">Gender *</label>
+                    <select name="gender"  class="form-control" required="">
+                        <option value="">--- Please select ---</option>
+                        <option value="{{ gender }}">Male</option>
+                        <option value="{{ gender }}">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="form-group">
+                    <label>City*</label>
+                    <input name="city" type="text" class="form-control" value="{{ profile.city }}" required="">
+
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="form-group">
+                    <label for="nationality">Country*</label>
+                    <input name="country" type="text" class="form-control" value="{{ profile.country }}" required="">
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-5 col-sm-12 radio">
+                <input value="preferred" name="ChooseDate" type="radio" id="preferredDate" checked="checked">
+                <label for="preferredDate">
+                    Choose a preferred date
+                </label>
+            </div>
+
+
+        </div>
+        <div id="divPreferredDate">
+            <div class="form-group">
+                <label>Preferred date and time option 1 *</label>
+                <div class="row">
+                    <div class="col-6 col-lg-8">
+                        <input name="booking_date" type="text"  class="form-control form-date flatpickr-input" required="" >
+                    </div>
+                    <div class="col-6 col-lg-4">
+                        <select name="booking_Time"  class="form-control"><option value="{{ booking_Time }}">Any time</option><option value="07:00 - 07:59">07:00 - 07:59</option><option value="08:00 - 08:59">08:00 - 08:59</option><option value="09:00 - 09:59">09:00 - 09:59</option><option value="10:00 - 10:59">10:00 - 10:59</option><option value="11:00 - 11:59">11:00 - 11:59</option><option value="12:00 - 12:59">12:00 - 12:59</option><option value="13:00 - 13:59">13:00 - 13:59</option><option value="14:00 - 14:59">14:00 - 14:59</option><option value="15:00 - 15:59">15:00 - 15:59</option><option value="16:00 - 16:59">16:00 - 16:59</option><option value="17:00 - 17:59">17:00 - 17:59</option></select>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12 text-center py-5">
+               <button type="submit" class="btn btn-primary btn-lg" >Submit</button>
+            </div>
+        </div>
+
+
+    </form>
+
+

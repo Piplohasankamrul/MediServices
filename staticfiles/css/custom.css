@@ -1,0 +1,137 @@
+﻿.intl-tel-input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    flex: 100%;
+    padding: 0px;
+}
+.doctor_active{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+    .intl-tel-input.allow-dropdown .flag-container, .intl-tel-input.separate-dial-code .flag-container {
+        left: 0px;
+    }
+
+   
+.form-check-input {
+    margin-top: 0px;
+}
+
+.easy-autocomplete {
+    width: 100% !important
+}
+
+    .easy-autocomplete input {
+        width: 100%;
+    }
+
+button.btn {
+    margin-bottom: 10px;
+}
+
+.radio label {
+    padding-left: 5px;
+}
+
+.AR .radio lable {
+    padding-right: 5px;
+}
+
+.tabHeader[aria-selected=true] {
+    background: #8a8c8c;
+    color: #fff;
+}
+
+.form-group .radio {
+    padding-right: 20px;
+}
+
+.AR.form-group  .radio {
+    padding-left: 20px;
+}
+
+label[id$='fulAttach-error'] {
+    margin-top: 11px;
+}
+
+.value-day, .value-time-start, .value-time-end {
+    display:none;
+}
+
+table {
+    font-size: 0.80rem;
+}
+
+.clear_space_bottom {
+    margin-bottom: 0 !important;
+}
+.space_bottom {
+    margin-bottom: 0.5rem !important;
+}
+.step__item__number {
+    z-index: 99;
+}
+
+@media only screen and (max-width: 420px) {
+    .intl-tel-input .flag-container {
+        padding: 0px;
+    }
+
+    .step {
+        font-size: 0.90rem;
+    }
+
+    #divPreferredDate div .col-12.col-lg-4 {
+        padding-top: 5px;
+    }
+
+    .pl-5, .px-5 {
+        padding-left: .5rem !important;
+    }
+
+    .pb-5, .py-5 {
+        padding-bottom: .5rem !important;
+    }
+
+    .pr-5, .px-5 {
+        padding-right: .5rem !important;
+    }
+
+    .pt-2, .py-2 {
+        padding-top: .5rem !important;
+    }
+}
+
+.link-cancelAndChangeAppointment {
+    line-height: 3em;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+    .tabsBar {
+        position: relative;
+    }
+    a.col-4.col-lg-3.link-cancelAndChangeAppointment {
+        position: absolute;
+        right: 0;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .tabsBar {
+        position: relative;
+    }
+
+    a.col-4.col-lg-3.link-cancelAndChangeAppointment {
+        position: absolute;
+        right: 0;
+        line-height: 1.5em;
+    }
+}
+a.col-4.col-lg-3.link-cancelAndChangeAppointment {
+        position: absolute;
+        right: 0;
+    }

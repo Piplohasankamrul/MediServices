@@ -1,0 +1,65 @@
+{% load static %}
+<!-- Begin Product Area -->
+<div class="product-area pt-60 pb-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="li-product-tab">
+                    <ul class="nav li-product-menu">
+                        <li><a class="active" data-toggle="tab" href="#li-new-product"><span>New Ambulance</span></a></li>
+                    </ul>
+                </div>
+                <!-- Begin Li's Tab Menu Content Area -->
+            </div>
+        </div>
+        <div class="tab-content">
+            <div id="li-new-product" class="tab-pane active show" role="tabpanel">
+                <div class="row">
+                    <div class="product-active owl-carousel">
+                        {% for ambulance in latest_ambulance %}
+                        <div class="col-lg-12">
+                            <!-- single-product-wrap start -->
+                            <div class="single-product-wrap">
+                                <div class="product-image">
+                                    <a href="{% url 'ambulance_single_profile' id=ambulance.id %}">
+                                        <img src="{{ambulance.imageURL}}" alt="Li's Product Image" style="width: 250px; height: 250px;">
+                                    </a>
+                                    <span class="sticker">New</span>
+                                </div>
+                                <div class="product_desc">
+                                    <div class="product_desc_info">
+                                        <div class="product-review">
+                                            <h5 class="manufacturer">
+                                                <a href="shop-left-sidebar.html">{{ambulance.location}}</a>
+                                            </h5>
+                                            <div class="rating-box">
+                                                <ul class="rating">
+                                                    <li><i class="fa fa-star{% if product.average_review < 1 %}-o{% endif %}"></i></li>
+                                                    <li><i class="fa fa-star{% if product.average_review < 2 %}-o{% endif %}"></i></li>
+                                                    <li><i class="fa fa-star{% if product.average_review < 3 %}-o{% endif %}"></i></li>
+                                                    <li><i class="fa fa-star{% if product.average_review < 4 %}-o{% endif %}"></i></li>
+                                                    <li><i class="fa fa-star{% if product.average_review < 5 %}-o{% endif %}"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <h4><a class="product_name" href="{% url 'ambulance_single_profile' id=ambulance.id %}">{{ambulance.name}}</a></h4>
+                                        <div class="price-box">
+                                            <span class="new-price">{{ambulance.phone}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="add-actions">
+                                        <ul class="add-actions-link">
+                                            <li class="add-cart active"><a href="">Call for Book</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single-product-wrap end -->
+                        </div>
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+        </div></div></div>
