@@ -1,2 +1,0 @@
-# MediService
-Medical Related Software
